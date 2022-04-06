@@ -36,13 +36,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a> Главная </a>
+              <a>Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html"> Каталог продукции </a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="form.html"> Подбор программы </a>
+              <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -50,17 +50,19 @@
     </header>
     <main class="form-container">
       <section class="heading">
-        <div class="heading__wrapper heading__decoration">
-          <div class="form">
-            <h1 class="form__title">Каталог продукции</h1>
-            <p class="form__info">
-              Заполните анкету, и мы подберем программу питания для вашего кота
-            </p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+        <div class="heading__wrapper">
+          <h1 class="heading__title heading__desc">Подбор программы</h1>
+          <p class="heading__info">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+        </div>
+      </section>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <section class="form">
+          <div class="form__wrapper">
             <div class="form__list">
               <div class="form__item">
-               <label class="form__name" for="name"
-                >Имя:*</label>
+                <label class="form__name" for="name">Имя:*</label>
                 <input
                   class="form-field"
                   type="text"
@@ -71,9 +73,8 @@
                   required
                 />
               </div>
-             <div class="form__item">
-              <label class="form__weight" for="weight"
-                >Вес (кг):*</label>
+              <div class="form__item">
+                <label class="form__weight" for="weight">Вес (кг):*</label>
                 <input
                   class="form-field"
                   type="text"
@@ -81,11 +82,10 @@
                   id="weight"
                   autocomplete="on"
                   placeholder="7"
-                 />
-             </div>
-             <div class="form__item">
-              <label class="form__age" for="age"
-                >Возраст (лет):</label>
+                />
+              </div>
+              <div class="form__item">
+                <label class="form__age" for="age">Возраст (лет):</label>
                 <input
                   class="form-field"
                   type="text"
@@ -94,67 +94,59 @@
                   autocomplete="on"
                   placeholder="7"
                 />
-             </div>
+              </div>
             </div>
-
-        </div>
-
-      </div>
-
-      </section>
-      <section class="correction">
-        <div class="correction__wrapper">
-
-          <div class="correction__list">
-            <div class="correction__item">
-              <input
-              class="correction-body"
-              type="radio"
-              name="weight-loss"
-              id="loss"
-              checked
-            />
-          <label class="weight-correction" for="loss">
-            похудение
-          </label>
-          <br />
-        </div>
-        <div class="correction__item">
-          <input
-              class="correction-body"
-              type="radio"
-              name="weight-gain"
-              id="gain"
-            />
-          <label class="weight-correction" for="gain">
-            Набор массы
-          </label>
-        </div>
-        <div class="correction__item">
-          <input
-              class="correction-body"
-              type="radio"
-              name="weight-unknown"
-              id="unknown"
-            />
-          <label class="weight-correction" for="unknown">
-            Не знаю (Нужен ваш совет)
-          </label>
-        </div>
-        </div>
-      </div>
-
-      </section>
-      <section class="сontact">
-        <div class="сontact__details__wrapper">
-          <div class="сontact-owner ">
-            <h2 class="сontact-owner__title">
-              Контактные данные<br />
-              (владельца кота)
-            </h2>
-
-              <label class="сontact-owner__email" for="сontact-owner__email"
-                >E-mail:*</label>
+          </div>
+        </section>
+        <section class="correction">
+          <div class="correction__wrapper">
+            <div class="correction__list">
+              <div class="correction__item">
+                <input
+                  class="correction-body"
+                  type="radio"
+                  name="weight-loss"
+                  id="loss"
+                  checked
+                />
+                <label class="weight-correction" for="loss"> похудение </label>
+              </div>
+              <div class="correction__item">
+                <input
+                  class="correction-body"
+                  type="radio"
+                  name="weight-gain"
+                  id="gain"
+                />
+                <label class="weight-correction" for="gain">
+                  Набор массы
+                </label>
+              </div>
+              <div class="correction__item">
+                <input
+                  class="correction-body"
+                  type="radio"
+                  name="weight-unknown"
+                  id="unknown"
+                />
+                <label class="correction__weight" for="unknown">
+                  Не знаю (Нужен ваш совет)
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="сontact">
+          <div class="сontact__details__wrapper">
+            <div class="сontact-owner">
+              <h2 class="сontact-owner__title">
+                Контактные данные<br />
+                (владельца кота)
+              </h2>
+              <div class="сontact-owner__item">
+                <label class="сontact-owner__email" for="сontact-owner__email"
+                  >E-mail:*</label
+                >
                 <input
                   class="сontact-owner__field"
                   placeholder="kuklachev@gmail.com"
@@ -164,9 +156,11 @@
                   id="сontact-owner__email"
                   required
                 />
-
-              <label class="сontact-owner__tel" for="сontact-owner__tel"
-                >Телефон:* </label>
+              </div>
+              <div class="сontact-owner__item">
+                <label class="сontact-owner__tel" for="сontact-owner__tel"
+                  >Телефон:*</label
+                >
                 <input
                   class="сontact-owner__field"
                   placeholder="8 (960) 900-60-90"
@@ -177,74 +171,90 @@
                   id="сontact-owner__tel"
                   required
                 />
-
-
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </form>
 
-      </section>
       <section class="comment">
         <div class="comment__wrapper">
           <div class="comment__owner">
             <h2 class="comment__title">Комментарий</h2>
 
-              <div class="comment-inner">
-                <textarea class="comment-field" name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота</textarea>
-              </div>
-            </form>
+            <div class="comment__inner">
+              <label class="comment__text" for="comment-field"></label>
+              <textarea
+                class="comment__field"
+                name="comment"
+                id="comment-field"
+                rows="10"
+              >
+Расскажите обо всех повадках кота</textarea
+              >
+            </div>
           </div>
         </div>
       </section>
       <section class="additionally">
         <div class="additionally__wrapper">
-          <div class=" additionally__item additionally-filter">
+          <div class="additionally__item additionally-filter">
             <h2 class="additionally-filter__title">Дополнительно</h2>
             <ul class="additionally-filter__list">
-              <li class="additionally-filter__item">
-                <label class="control">
-                  <input
-                    class="control__input"
-                    type="checkbox"
-                    name="sweetener"
-                    checked
-                  />
-                  <span class="control__mark"></span>
-                  <span class="control__label">Сахарозаменитель</span>
+              <li class="additionally-filter__item control">
+                <input
+                  class="control__input"
+                  type="checkbox"
+                  name="sweetener"
+                  id="control__label"
+                  checked
+                />
+                <label class="control__label" for="control__label">
+                  Сахарозаменитель
                 </label>
               </li>
-              <li class="additionally__filter__item">
-                <label class="control">
-                  <input
-                    class="control__input"
-                    type="checkbox"
-                    name="drinking__water"
-                  />
-                  <span class="control__mark"></span>
-                  <span class="control__label">Питьевая вода</span>
+              <li class="additionally-filter__item control">
+                <input
+                  class="control__input"
+                  type="checkbox"
+                  name="sweetener"
+                  id="control__water"
+                  checked
+                />
+                <label class="control__label" for="control__water">
+                  Питьевая вода
                 </label>
               </li>
-              <li class="additionally-filter-item">
-                <label class="control">
-                  <input class="control__input" type="checkbox" name="milk" />
-                  <span class="control__mark"></span>
-                  <span class="control__label">Молоко</span>
+              <li class="additionally-filter-item control">
+                <input
+                  class="control__input"
+                  type="checkbox"
+                  name="sweetener"
+                  id="control__milk"
+                  checked
+                />
+                <label class="control__label" for="control__milk">
+                  Молоко
                 </label>
               </li>
-              <li class="additionally__filter__item">
-                <label class="control">
-                  <input
-                    class="control__input"
-                    type="checkbox"
-                    name="vitamins"
-                  />
-                  <span class="control-mark"></span>
-                  <span class="control-label">Витамины</span>
+              <li class="additionally__filter__item control">
+                <input
+                  class="control__input"
+                  type="checkbox"
+                  name="sweetener"
+                  id="control__vitamins"
+                  checked
+                />
+                <label class="control__label" for="control__vitamins">
+                  Витамины
                 </label>
               </li>
             </ul>
           </div>
-          <button class="additionally__order additionally__button-color" type="submit">
+          <button
+            class="additionally__order additionally__button-color"
+            type="submit"
+          >
             отправить заявку
           </button>
           <p class="additionally__field additionally__field--top">
@@ -254,21 +264,21 @@
       </section>
       <section class="cooperation">
         <div class="cooperation__wrapper">
-        <div class="cooperation__invitation invitation">
-          <b class="invitation__title"
-            >Приглашаем<br />к сотрудничеству<br />дилеров!</b
-          >
-          <p class="invitation__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="invitation__city">Санкт-Петербург</p>
+          <div class="cooperation__invitation invitation">
+            <b class="invitation__title"
+              >Приглашаем<br />к сотрудничеству<br />дилеров!</b
+            >
+            <p class="invitation__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="invitation__city">Санкт-Петербург</p>
+          </div>
+          <div class="cooperation__invitation invitation-location">
+            <img
+              class="invitation-location__image"
+              src="./img/location/location-mobile.svg"
+              alt="Адрес магазина на карте"
+            />
+          </div>
         </div>
-        <div class="cooperation__invitation invitation-location">
-          <img
-            class="invitation-location__image"
-            src=".\img\location\location-mobile.svg"
-            alt="Адрес магазина на карте"
-          />
-        </div>
-      </div>
       </section>
     </main>
     <footer class="main-footer">
@@ -320,6 +330,5 @@
         </div>
       </div>
     </footer>
-    </main>
   </body>
 </html>
