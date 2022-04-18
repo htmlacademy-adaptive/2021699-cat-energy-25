@@ -1,10 +1,13 @@
 .card-food {
   margin: 0;
+  padding: 0;
 }
 
 .card-food__item {
   background: hsl(0, 0%, 95%);
   color: #000000;
+  display: grid;
+  padding: 0 15px;
 }
 
 .card-food__title {
@@ -20,6 +23,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  text-align: justify;
 }
 
 .card-food a {
@@ -29,4 +33,37 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .card-food__item {
+    position: relative;
+    width: 708px;
+    box-sizing: border-box;
+  }
+
+  .card-food__item--image {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+  }
+
+  .card-food__text {
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-food__item {
+    width: 570px;
+  }
+
+  .card-food__item--image {
+    position: static;
+  }
 }

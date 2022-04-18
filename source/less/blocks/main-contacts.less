@@ -8,10 +8,30 @@
 
 .main-contacts__dealer {
   display: flex;
+  justify-content: space-between;
   margin: 0;
 }
 
 .main-contacts__image {
   background-color: #ffffff;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .main-contacts__dealer {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-contacts__wrapper {
+    position: relative;
+  }
+
+  .main-contacts__dealer {
+    position: absolute;
+    width: 565px;
+    top: 30%;
+    left: 0%;
+  }
 }
