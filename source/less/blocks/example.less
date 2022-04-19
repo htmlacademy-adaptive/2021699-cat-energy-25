@@ -25,25 +25,6 @@
   flex-direction: column;
 }
 
-.example__image {
-  display: flex;
-  margin: 0;
-}
-
-.example__text {
-  background-color: hsl(0, 0%, 92%);
-  color: #000000;
-}
-
-.example__text button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  border: none;
-}
-
 .example__list {
   display: flex;
   background-color: hsl(0, 0%, 92%);
@@ -112,17 +93,10 @@
     width: 436px;
   }
 
-  .example {
-    position: relative;
-  }
-
-  .slider {
-    position: absolute;
-    top: 10%;
-    right: 0%;
-  }
-
   .example__wrapper {
-    max-width: 1440px;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
