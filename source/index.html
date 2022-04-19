@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -52,16 +53,18 @@
       <section class="food-function">
         <div class="food-function__wrapper">
           <header class="food-function__header">
-            <h2 class="food-function__title">
-              Функциональное питание для котов
-            </h2>
-            <p class="food-function__intro">Занялся собой? Займись котом!</p>
+            <div class="food-function__slogan">
+              <h2 class="food-function__title">
+                Функциональное<br />питание для котов
+              </h2>
+              <p class="food-function__intro">Занялся собой? Займись котом!</p>
+            </div>
             <img
               class="food-function__image"
               src="./img/index-can.svg"
               alt="Корм для котов"
             />
-            <a class="food-function-form auswahl-food" href="form.html">
+            <a class="food-function__form auswahl-food" href="form.html">
               Подобрать программу
             </a>
           </header>
@@ -72,59 +75,90 @@
           <h2 class="visually-hidden">Подбор корма для кошек</h2>
           <ul class="card-food-function__list card-food">
             <li class="card-food__item card-food__item--slim">
-              <h3 class="card-food__title">Похудение</h3>
-              <p class="card-food__description">
-                Ваш кот весит больше собаки и почти утратил способность лазить
-                по деревьям? Пора на диету! Cat Energy Slim поможет вашему
-                питомцу сбросить лишний вес.
-              </p>
-              <a class="card-food__slim" href="catalog.html">
-                Каталог slim
-                <svg
-                  class="card-food__slim-icon"
-                  class="card-food__pro-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="32"
-                  height="12"
-                  viewBox="0 0 32 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                  <path
-                    d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
+              <h3 class="card-food__title">
+                <img
+                  class="card-food__item--image"
+                  src="./img/cat_slim.svg"
+                  alt="slim"
+                  width="50"
+                  height="53"
+                />Похудение
+              </h3>
+              <div class="card-food__text">
+                <p class="card-food__description">
+                  Ваш кот весит больше собаки и почти утратил способность лазить
+                  по деревьям? Пора на диету! Cat Energy Slim поможет вашему
+                  питомцу сбросить лишний вес.
+                </p>
+                <a class="card-food__slim" href="catalog.html">
+                  Каталог slim
+                  <svg
+                    class="card-food__slim-icon"
+                    class="card-food__pro-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="32"
+                    height="12"
+                    viewBox="0 0 32 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      y1="6"
+                      x2="18"
+                      y2="6"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
             </li>
             <li class="card-food__item card-food__item--pro">
-              <h3 class="card-food__title">Набор массы</h3>
-              <p class="card-food__description">
-                Заработать авторитет среди дворовых котов и даже собак? Серия
-                Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-              </p>
+              <h3 class="card-food__title">
+                <img
+                  class="card-food__item--image"
+                  src="./img/cat_pro.svg"
+                  alt="pro"
+                />Набор массы
+              </h3>
+              <div class="card-food__text">
+                <p class="card-food__description">
+                  Заработать авторитет среди дворовых котов и даже собак? Серия
+                  Cat Energy Pro поможет вашему коту нарастить необходимые
+                  мышцы!
+                </p>
 
-              <a class="card-food__pro" href="./catalog.html">
-                Каталог Pro
-                <svg
-                  class="card-food__pro-icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="32"
-                  height="12"
-                  viewBox="0 0 32 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                  <path
-                    d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
+                <a class="card-food__pro" href="./catalog.html">
+                  Каталог Pro
+                  <svg
+                    class="card-food__pro-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="32"
+                    height="12"
+                    viewBox="0 0 32 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      y1="6"
+                      x2="18"
+                      y2="6"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -132,9 +166,9 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Как это работает</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--natural">
-              <div class="advantages__item--natural-image">
+          <ul class="advantages__list advantages-card">
+            <li class="advantages-card__item advantages-card__item--natural">
+              <div class="advantages-card__item--natural-image">
                 <img
                   src="./img/main_advantages/natural_product.svg"
                   alt="Функциональное питание"
@@ -142,15 +176,15 @@
                   height="60"
                 />
               </div>
-              <div class="advantages__description">
+              <div class="advantages-card__description">
                 <p>
                   Функциональное питание содержит только полезные питательные
                   вещества.
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--powder">
-              <div class="advantages__item--powder-image">
+            <li class="advantages-card__item advantages-card__item--powder">
+              <div class="advantages-card__item--powder-image">
                 <img
                   src="./img/main_advantages/powder.svg"
                   alt="Структура-порошок"
@@ -158,15 +192,15 @@
                   height="60"
                 />
               </div>
-              <div class="advantages__description">
+              <div class="advantages-card__description">
                 <p>
                   Выпускается в виде порошка, который нужно лишь залить кипятком
                   и готово.
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--meal">
-              <div class="advantages__item--meal-image">
+            <li class="advantages-card__item advantages-card__item--meal">
+              <div class="advantages-card__item--meal-image">
                 <img
                   src="./img/main_advantages/meal.svg"
                   alt="Замена приема пищи"
@@ -174,14 +208,14 @@
                   height="60"
                 />
               </div>
-              <div class="advantages__description">
+              <div class="advantages-card__description">
                 <p>
                   Замените один-два приема обычной еды на наше функциональное
                   питание.
                 </p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--result">
+            <li class="advantages-card__item advantages-card__item--result">
               <div class="advantages__item--result-image">
                 <img
                   src="./img/main_advantages/nutrition_result.svg"
@@ -190,7 +224,7 @@
                   height="60"
                 />
               </div>
-              <div class="advantages__description">
+              <div class="advantages-card__description">
                 <p>
                   Уже через месяц наслаждайтесь изменениями к лучшему вашего
                   питомца!
@@ -210,18 +244,20 @@
               При этом он не менял своих привычек и по-прежнему спит по 16 часов
               в день.
             </p>
-            <dl class="example__list">
+            <div class="example__feature">
+              <dl class="example__list">
+                <div class="example__item">
+                  <dt class="example__number">5 КГ</dt>
+                  <dd class="example__description">снижение<br />веса</dd>
+                </div>
+                <div class="example__item">
+                  <dt class="example__number">60 ДНЕЙ</dt>
+                  <dd class="example__description">затрачено<br />времени</dd>
+                </div>
+              </dl>
               <div class="example__item">
-                <dt class="example__number">5 КГ</dt>
-                <dd class="example__description">снижение<br />веса</dd>
+                <p class="example__total">Затраты на питание: 15 000 РУБ.</p>
               </div>
-              <div class="example__item">
-                <dt class="example__number">60 ДНЕЙ</dt>
-                <dd class="example__description">затрачено<br />времени</dd>
-              </div>
-            </dl>
-            <div class="example__item">
-              <p class="example__total">Затраты на питание: 15 000 РУБ.</p>
             </div>
 
             <div class="example__results slider">

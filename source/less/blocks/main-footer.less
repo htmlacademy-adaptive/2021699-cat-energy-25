@@ -1,7 +1,4 @@
 .main-footer {
-  width: 320px;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   background: hsl(0, 0%, 95%);
 }
@@ -23,4 +20,12 @@
   background: hsl(0, 0%, 95%);
   color: #000000;
   display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+  }
 }
