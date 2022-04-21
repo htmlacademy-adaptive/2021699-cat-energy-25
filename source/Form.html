@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header-decoration">
+      <div class="main-header__decoration">
         <div class="main-header__logo-image">
           <a class="main-header__logo">
             <img
@@ -37,7 +37,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Каталог продукции</a>
@@ -59,91 +59,94 @@
         </div>
       </section>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <section class="form">
-          <div class="form__wrapper">
-            <div class="form__list">
-              <div class="form__item">
-                <label class="form__name" for="name">Имя:*</label>
-                <input
-                  class="form-field"
-                  type="text"
-                  name="user"
-                  id="name"
-                  autocomplete="on"
-                  placeholder="Барсик"
-                  required
-                />
-              </div>
-              <div class="form__item">
-                <label class="form__weight" for="weight">Вес (кг):*</label>
-                <input
-                  class="form-field"
-                  type="text"
-                  name="weight"
-                  id="weight"
-                  autocomplete="on"
-                  placeholder="7"
-                />
-              </div>
-              <div class="form__item">
-                <label class="form__age" for="age">Возраст (лет):</label>
-                <input
-                  class="form-field"
-                  type="text"
-                  name="age"
-                  id="age"
-                  autocomplete="on"
-                  placeholder="7"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="correction">
-          <div class="correction__wrapper">
-            <div class="correction__list">
-              <div class="correction__item">
-                <input
-                  class="correction-body"
-                  type="radio"
-                  name="weight-loss"
-                  id="loss"
-                  checked
-                />
-                <label class="weight-correction" for="loss"> похудение </label>
-              </div>
-              <div class="correction__item">
-                <input
-                  class="correction-body"
-                  type="radio"
-                  name="weight-gain"
-                  id="gain"
-                />
-                <label class="weight-correction" for="gain">
-                  Набор массы
-                </label>
-              </div>
-              <div class="correction__item">
-                <input
-                  class="correction-body"
-                  type="radio"
-                  name="weight-unknown"
-                  id="unknown"
-                />
-                <label class="weight-correction" for="unknown">
-                  Не знаю (Нужен ваш совет)
-                </label>
+        <div class="form__correction">
+          <section class="form">
+            <div class="form__wrapper">
+              <div class="form__list">
+                <div class="form__item">
+                  <label class="form__name" for="name">Имя:*</label>
+                  <input
+                    class="form__field"
+                    type="text"
+                    name="user"
+                    id="name"
+                    autocomplete="on"
+                    placeholder="Барсик"
+                    required
+                  />
+                </div>
+                <div class="form__item">
+                  <label class="form__weight" for="weight">Вес(кг):*</label>
+                  <input
+                    class="form__field"
+                    type="text"
+                    name="weight"
+                    id="weight"
+                    autocomplete="on"
+                    placeholder="7"
+                  />
+                </div>
+                <div class="form__item">
+                  <label class="form__age" for="age">Возраст(лет):</label>
+                  <input
+                    class="form__field"
+                    type="text"
+                    name="age"
+                    id="age"
+                    autocomplete="on"
+                    placeholder="7"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <section class="correction">
+            <div class="correction__wrapper">
+              <div class="correction__list">
+                <div class="correction__item">
+                  <input
+                    class="correction-body"
+                    type="radio"
+                    name="weight-loss"
+                    id="loss"
+                    checked
+                  />
+                  <label class="weight-correction" for="loss">
+                    похудение
+                  </label>
+                </div>
+                <div class="correction__item">
+                  <input
+                    class="correction-body"
+                    type="radio"
+                    name="weight-gain"
+                    id="gain"
+                  />
+                  <label class="weight-correction" for="gain">
+                    Набор массы
+                  </label>
+                </div>
+                <div class="correction__item">
+                  <input
+                    class="correction-body"
+                    type="radio"
+                    name="weight-unknown"
+                    id="unknown"
+                  />
+                  <label class="weight-correction" for="unknown">
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         <section class="сontact">
-          <div class="сontact__details__wrapper">
+          <div class="сontact-owner__wrapper">
+            <h2 class="сontact-owner__title">
+              Контактные данные (владельца кота)
+            </h2>
             <div class="сontact-owner">
-              <h2 class="сontact-owner__title">
-                Контактные данные<br />
-                (владельца кота)
-              </h2>
               <div class="сontact-owner__item">
                 <label class="сontact-owner__email" for="сontact-owner__email"
                   >E-mail:*</label
@@ -252,15 +255,17 @@
               </li>
             </ul>
           </div>
-          <button
-            class="additionally__order additionally__button-color"
-            type="submit"
-          >
-            отправить заявку
-          </button>
-          <p class="additionally__field additionally__field--top">
-            <small> * — Обязательные поля </small>
-          </p>
+          <div class="additionally__item-application">
+            <button
+              class="additionally__order additionally__button-color"
+              type="submit"
+            >
+              отправить заявку
+            </button>
+            <p class="additionally__field additionally__field--top">
+              <small> * — Обязательные поля </small>
+            </p>
+          </div>
         </div>
       </section>
       <section class="cooperation-contacts">
@@ -269,8 +274,9 @@
             <b class="contacts__title"
               >Приглашаем<br />к сотрудничеству<br />дилеров!</b
             >
-            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="contacts__city">Санкт-Петербург</p>
+            <p class="contacts__text">
+              ул. Большая Конюшенная, д. 19/8 <br />Санкт-Петербург
+            </p>
           </div>
           <div class="cooperation-contacts__location location">
             <img

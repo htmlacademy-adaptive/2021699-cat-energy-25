@@ -19,4 +19,28 @@
   font-size: 16px;
   text-transform: uppercase;
   line-height: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.comment__wrapper {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .comment__wrapper {
+    width: 100%;
+    max-width: 631px;
+    margin: 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0;
+  }
 }

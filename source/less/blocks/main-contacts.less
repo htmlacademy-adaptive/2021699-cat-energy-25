@@ -2,8 +2,13 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   color: #000000;
+}
+
+.main-contacts__wrapper {
+  background-color: hsl(0, 0%, 95%);
+  width: 100%;
+  max-width: 320px;
 }
 
 .main-contacts__dealer {
@@ -21,9 +26,18 @@
   .main-contacts__dealer {
     width: 768px;
   }
+
+  .main-contacts__wrapper {
+    width: 100%;
+    max-width: 768px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .main-contacts {
+    background-color: #ffffff;
+  }
+
   .main-contacts__wrapper {
     position: relative;
   }

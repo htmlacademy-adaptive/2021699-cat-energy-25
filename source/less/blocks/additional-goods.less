@@ -1,5 +1,29 @@
 .additional-goods {
   background-color: #ffffff;
   color: #000000;
-  margin: 0;
+  margin: 0 20px;
+}
+
+.additional-goods__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-goods__wrapper {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-goods__wrapper {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .additional-goods__present {
+    display: flex;
+  }
 }
