@@ -2,22 +2,28 @@
   background-color: #ffffff;
   color: #000000;
   margin: 0;
-  padding: 0;
+  margin-top: 54px;
+}
+
+.present__wrapper {
+  width: 320px;
+  margin: 0 20px;
 }
 
 .present__food {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/present-cat.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
-  background-size: 279px 289px;
+  background-size: 280px 290px;
   width: 279px;
   height: 289px;
-  margin: 0;
   padding: 0;
+  padding-top: 58px;
 }
 
 .present__image {
   color: #000000;
+  margin: 0 96px;
 }
 
 .present__slogan {
@@ -26,4 +32,45 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  width: 161px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .present__wrapper {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .present__food {
+    background-size: 707px 200px;
+    width: 707px;
+    height: 200px;
+    display: flex;
+    padding: 0;
+    padding-top: 71px;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .present__wrapper {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .present {
+    margin: 0;
+  }
+
+  .present__food {
+    display: block;
+    background-size: 280px 290px;
+    width: 279px;
+    height: 289px;
+    padding: 0;
+    padding-top: 58px;
+  }
 }

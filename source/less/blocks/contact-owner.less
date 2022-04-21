@@ -13,8 +13,61 @@
 }
 
 .сontact-owner__item {
+  display: flex;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+}
+
+.сontact-owner__email {
+  display: table-cell;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.сontact-owner__wrapper {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 20px;
+}
+
+.сontact-owner__field {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 11px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .сontact-owner__wrapper {
+    width: 100%;
+    max-width: 631px;
+    margin: 0 66px;
+  }
+
+  .сontact-owner__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .сontact-owner__field {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .сontact-owner__wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0;
+  }
+
+  .сontact-owner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 78px;
+  }
 }

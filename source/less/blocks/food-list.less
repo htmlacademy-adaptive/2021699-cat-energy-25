@@ -13,3 +13,27 @@
   text-decoration: none;
   list-style-type: none;
 }
+
+
+@media (min-width: @tablet-width) {
+  .food-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 68px 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .food-list {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 80px 63px;
+    box-sizing: border-box;
+  }
+
+  .food-list__item {
+    width: 245px;
+  }
+}
