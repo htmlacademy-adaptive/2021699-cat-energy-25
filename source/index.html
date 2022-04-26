@@ -82,7 +82,8 @@
                   alt="slim"
                   width="50"
                   height="53"
-                />Похудение
+                />
+                <span class="card-food__title-name">Похудение</span>
               </h3>
               <div class="card-food__text">
                 <p class="card-food__description">
@@ -94,7 +95,6 @@
                   Каталог slim
                   <svg
                     class="card-food__slim-icon"
-                    class="card-food__pro-icon"
                     aria-hidden="true"
                     focusable="false"
                     width="32"
@@ -121,7 +121,7 @@
             <li class="card-food__item card-food__item--pro">
               <h3 class="card-food__title">
                 <img
-                  class="card-food__item--image"
+                  class="card-food__item--image card-food__item--image-pro"
                   src="./img/cat_pro.svg"
                   alt="pro"
                 />Набор массы
@@ -168,7 +168,9 @@
           <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list advantages-card">
             <li class="advantages-card__item advantages-card__item--natural">
-              <div class="advantages-card__item--natural-image">
+              <div
+                class="advantages-card__item--image advantages-card__item--natural-image"
+              >
                 <img
                   src="./img/main_advantages/natural_product.svg"
                   alt="Функциональное питание"
@@ -184,7 +186,9 @@
               </div>
             </li>
             <li class="advantages-card__item advantages-card__item--powder">
-              <div class="advantages-card__item--powder-image">
+              <div
+                class="advantages-card__item--image advantages-card__item--powder-image"
+              >
                 <img
                   src="./img/main_advantages/powder.svg"
                   alt="Структура-порошок"
@@ -200,7 +204,9 @@
               </div>
             </li>
             <li class="advantages-card__item advantages-card__item--meal">
-              <div class="advantages-card__item--meal-image">
+              <div
+                class="advantages-card__item--image advantages-card__item--meal-image"
+              >
                 <img
                   src="./img/main_advantages/meal.svg"
                   alt="Замена приема пищи"
@@ -216,7 +222,9 @@
               </div>
             </li>
             <li class="advantages-card__item advantages-card__item--result">
-              <div class="advantages__item--result-image">
+              <div
+                class="advantages-card__item--image advantages-card__item--result-image"
+              >
                 <img
                   src="./img/main_advantages/nutrition_result.svg"
                   alt="Результат на лицо"
@@ -238,7 +246,7 @@
         <div class="example__wrapper">
           <div class="example__results">
             <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">
+            <p class="example__description-review">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
               на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
               При этом он не менял своих привычек и по-прежнему спит по 16 часов
@@ -255,8 +263,9 @@
                   <dd class="example__description">затрачено<br />времени</dd>
                 </div>
               </dl>
-              <div class="example__item">
-                <p class="example__total">Затраты на питание: 15 000 РУБ.</p>
+              <div class="example__item-total">
+                <p class="example__total">Затраты на питание:</p>
+                <p class="example__total-price">15 000 РУБ.</p>
               </div>
             </div>
           </div>
@@ -264,29 +273,36 @@
             <div class="slider__image slider__list">
               <img
                 class="slider__image-before slider__item"
-                src="./img/cat-example.jpg"
+                src="./img/cat-example.svg"
                 alt="Кот с лишним весом"
                 width="280"
                 height="232"
               />
               <img
                 class="slider__image-after slider__item"
-                src="./img/cat-example_after.jpg"
+                src="./img/cat-example_after.svg"
                 alt="Кот с умеренным весом"
                 width="280"
                 height="232"
               />
             </div>
-            <div class="slider__text slider__toggles">
-              <button
-                class="slider__text-before slider__toggle slider__toggle--current"
-                type="button"
-              >
-                Было
-              </button>
-              <button class="slider__text-after slider__toggle" type="button">
-                Стало
-              </button>
+            <div class="slider__text">
+              <span class="slider__text-before">Было</span>
+              <div class="slider__toggles">
+                <input type="checkbox" class="slider__checkbox" id="checkbox" />
+                <label class="slider__toggle" for="checkbox"></label>
+              </div>
+              <div class="slider__toggles-range">
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="1"
+                  class="slider__range"
+                  id="range"
+                />
+              </div>
+              <span class="slider__text-after">Стало</span>
             </div>
           </div>
         </div>
