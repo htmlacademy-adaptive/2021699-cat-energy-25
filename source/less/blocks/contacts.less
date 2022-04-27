@@ -1,9 +1,16 @@
 .contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   color: #000000;
+  padding: 0 20px;
 }
 
 .contacts__card p {
   margin: 0;
+}
+
+.contacts__wrapper {
+  margin: 0 auto;
 }
 
 .contacts p {
@@ -29,6 +36,7 @@
 
 @media (min-width: @tablet-width) {
   .contacts__card-address {
+    width: 159px;
     display: flex;
     text-align: end;
     flex-direction: column;
@@ -36,7 +44,14 @@
   }
 
   .contacts {
+    width: 768px;
     padding: 26px 70px;
+  }
+
+  .contacts__title {
+    width: 314px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 

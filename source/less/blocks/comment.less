@@ -1,5 +1,5 @@
 .comment {
-  margin: 0;
+  padding: 0 20px;
   background-color: #ffffff;
   color: #000000;
 }
@@ -24,16 +24,18 @@
 }
 
 .comment__wrapper {
-  width: 100%;
-  max-width: 280px;
-  margin: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
+  .comment {
+    padding: 0 70px;
+  }
+
   .comment__wrapper {
     width: 100%;
-    max-width: 631px;
-    margin: 0 70px;
+    max-width: 707px;
   }
 }
 
@@ -42,5 +44,14 @@
     width: 100%;
     max-width: 1170px;
     margin: 0;
+  }
+
+  .comment__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment {
+    padding: 0 110px;
   }
 }

@@ -7,11 +7,13 @@
 .cooperation-contacts__wrapper {
   background-color: hsl(0, 0%, 95%);
   width: 320px;
-  padding: 0;
+  margin: 0 auto;
 }
 
 .cooperation-contacts__invitation {
   margin: 0;
+  padding: 26px 20px;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,13 +21,19 @@
     width: 100%;
     max-width: 768px;
   }
+
+  .cooperation-contacts__invitation {
+    padding: 59px 70px 55px 70px;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .cooperation-contacts__wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     background-color: #ffffff;
+    margin: 0;
   }
 
   .cooperation-contacts {
@@ -34,7 +42,7 @@
 
   .cooperation-contacts__invitation {
     position: absolute;
-    top: 50%;
-    left: 110px;
+    top: 94px;
+    left: 10px;
   }
 }

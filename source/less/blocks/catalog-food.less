@@ -4,20 +4,32 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+}
+
+.catalog-food__wrapper {
   width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .catalog-food {
+    padding: 0 30px;
+  }
+
+  .catalog-food__wrapper {
     width: 100%;
-    max-width: 768px;
+    max-width: 707px;
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .catalog-food {
+    padding: 0 110px;
+  }
+
+  .catalog-food__wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
