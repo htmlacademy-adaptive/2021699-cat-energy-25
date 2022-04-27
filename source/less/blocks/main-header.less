@@ -3,10 +3,14 @@
   flex-direction: column;
   background-color: #ffffff;
   color: #000000;
-  position: relative;
   width: auto;
   min-height: 66px;
   justify-content: space-between;
+}
+
+.main-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-header__toggle {
@@ -17,12 +21,12 @@
   display: block;
   width: 24px;
   height: 16px;
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
   cursor: pointer;
   border: none;
 }
 
-.main-header--closed .main-header__toggle::before {
+.main-header__decoration--closed .main-header__toggle::before {
   content: "";
   position: absolute;
   top: 24px;
@@ -33,14 +37,14 @@
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
 
-.main-header--closed .main-header__toggle:active::before {
+.main-header__decoration--closed .main-header__toggle:active::before {
   background-color: fade(#000000, 30%);
   box-shadow:
     0 8px 0 0 fade(#000000, 30%),
     0 16px 0 0 fade(#000000, 30%);
 }
 
-.main-header--opened .main-header__toggle {
+.main-header__decoration--opened .main-header__toggle {
   top: 24px;
   right: 20px;
 
@@ -84,10 +88,10 @@
 
 .main-header__decoration {
   display: flex;
+  position: relative;
   height: 65px;
-  justify-content: space-between;
-  min-width: 280px;
   padding: 0 20px;
+  justify-content: space-between;
 }
 
 .main-header__logo-cat-energy img {
@@ -112,12 +116,6 @@
     margin-top: 43px;
   }
 
-  @media (min-width: @tablet-width) {
-    .main-header__toggle {
-      display: none;
-    }
-  }
-
   .main-header__decoration {
     width: 174px;
     justify-content: space-between;
@@ -128,13 +126,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-header {
+    padding-top: 53px;
+  }
+
   .main-header__wrapper {
     width: 1220px;
     margin: 0 auto;
   }
 
   .main-header__decoration {
-    margin-top: 53px;
     width: 202px;
     height: 59px;
   }
@@ -151,21 +152,25 @@
   }
 }
 
-@media (max-width: 767px) {
-  .main-header--closed .site-list__item {
+@media (min-width: 767px) {
+  .main-header__decoration--closed .site-list__item {
     display: none;
   }
 
-  .main-header--active {
+  &--active {
     display: block;
   }
 
-  .main-header--nojs .main-header__wrapper {
+  .main-header__decoration--nojs .main-header__decoration {
     position: static;
     min-height: 0;
   }
 
-  .main-header--nojs .site-list__item {
+  .main-header__decoration--nojs .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__decoration--nojs .site-list__item {
     display: block;
   }
 }

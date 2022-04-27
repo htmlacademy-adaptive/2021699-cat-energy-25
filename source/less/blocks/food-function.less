@@ -16,6 +16,7 @@
 }
 
 .food-function__wrapper {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -93,12 +94,6 @@
     width: 709px;
     height: 609px;
   }
-
-  .auswahl-food {
-    position: absolute;
-    top: 33%;
-    left: 0%;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -128,11 +123,12 @@
     background-size: 50% 100%;
     background-position: right center;
     display: flex;
-    min-width: 1440px;
+    width: 1440px;
     margin-bottom: 82px;
   }
 
-  .auswahl-food {
+  .food-function__form {
+    width: 192px;
     position: absolute;
   }
 }

@@ -1,14 +1,14 @@
-let headerMain = document.querySelector('.main-header');
+let headerMain = document.querySelector('.main-header__decoration');
 let headerToggle = document.querySelector('.main-header__toggle');
 
-headerMain.classList.remove('main-header--nojs');
+headerMain.classList.remove('main-header__decoration--nojs');
 
 headerToggle.addEventListener('click', function () {
-  if (headerMain.classList.contains('main-header--closed')) {
-    headerMain.classList.remove('main-header--closed');
-    headerMain.classList.add('main-header--opened');
+  if (headerMain.classList.contains('main-header__decoration--closed')) {
+    headerMain.classList.remove('main-header__decoration--closed');
+    headerMain.classList.add('main-header__decoration--opened');
   } else {
-    headerMain.classList.add('main-header--closed');
-    headerMain.classList.remove('main-header--opened');
+    headerMain.classList.add('main-header__decoration--closed');
+    headerMain.classList.remove('main-header__decoration--opened');
   }
 });
