@@ -7,10 +7,13 @@
   background: hsl(0, 0%, 95%);
   color: #000000;
   display: grid;
-  padding: 0 15px;
+  padding-left: 20px;
+  padding-right: 33px;
+  margin-bottom: 20px;
 }
 
 .card-food__title {
+  display: flex;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -18,12 +21,54 @@
   text-transform: uppercase;
 }
 
+.card-food__title-name {
+  padding: 7px 0;
+}
+
+.card-food__slim {
+  display: inline-block;
+  margin-top: 19px;
+  margin-bottom: 22px;
+}
+
+.card-food__pro {
+  display: inline-block;
+  margin-top: 19px;
+  margin-bottom: 22px;
+}
+
+.card-food__slim-icon {
+  margin-left: 15px;
+}
+
+.card-food__pro-icon {
+  margin-left: 15px;
+}
+
 .card-food__description {
+  position: relative;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-align: justify;
+  margin: 0;
+  padding: 23px 0;
+}
+
+
+.card-food__description::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background: hsl(0, 0%, 85%);
+}
+
+.card-food__item--image {
+  margin-right: 19px;
 }
 
 .card-food a {
@@ -36,20 +81,52 @@
 }
 
 @media (min-width: @tablet-width) {
+  .card-food a {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
   .card-food__item {
     position: relative;
     width: 708px;
     box-sizing: border-box;
+    padding-left: 53px;
   }
 
   .card-food__item--image {
     position: absolute;
-    top: 50%;
-    right: 5%;
+    top: 57px;
+    right: 12px;
+    width: 200px;
+    height: 211px;
+    margin: 0;
+  }
+
+  .card-food__slim-icon {
+    margin-left: 25px;
+  }
+
+  .card-food__pro-icon {
+    margin-left: 25px;
   }
 
   .card-food__text {
-    padding-right: 100px;
+    width: 340px;
+  }
+
+  .card-food__description::after {
+    display: none;
+  }
+
+  .card-food__item--image-pro {
+    width: 268px;
+    height: 200px;
+    right: 27px;
+  }
+
+  .card-food__pro {
+    margin-bottom: 57px;
   }
 }
 
@@ -57,10 +134,13 @@
   .card-food {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 80px 10px;
+    margin: 0 auto;
   }
 
   .card-food__item {
     width: 570px;
+    margin: 0 40px;
   }
 
   .card-food__item--image {
