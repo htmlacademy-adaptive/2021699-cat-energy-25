@@ -2,6 +2,7 @@
   margin: 0;
   color: #222222;
   background-color: #ffffff;
+  padding: 0 20px;
 }
 
 .correction__list {
@@ -17,18 +18,120 @@
   color: #222222;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
 
 .correction__wrapper {
-  width: 100%;
-  max-width: 276px;
-  margin: 0 20px;
+  max-width: 280px;
+  margin: 0 auto;
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+  margin-top: 27px;
+}
+
+.correction__label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 46px;
+}
+
+.correction__label::before {
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid hsl(0, 0%, 80%);
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+}
+
+.correction__label::after {
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  background-color: hsl(97, 53%, 47%);
+  left: 8px;
+  top: 8px;
+  display: none;
+}
+
+.correction__input:checked + .correction__label::after {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
+  .correction {
+    padding: 0 70px;
+  }
+
   .correction__wrapper {
-    width: 100%;
     max-width: 630px;
-    margin: 0 70px;
+    padding: 27px 27px;
+    border: 1px solid hsl(0, 0%, 85%);
+    margin: 0 auto;
+    padding-bottom: 2px;
+  }
+
+  .correction__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .correction__label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 61px;
+  }
+
+  .correction__label::before {
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 80%);
+    box-sizing: border-box;
+    left: 0;
+    top: -5px;
+  }
+
+  .correction__label::after {
+    position: absolute;
+    content: "";
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    background-color: hsl(97, 53%, 47%);
+    left: 11px;
+    top: 9px;
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .correction {
+    padding: 0;
+    margin: 0;
+  }
+
+  .correction__wrapper {
+    max-width: 570px;
+    margin: 0;
+    margin-right: 20px;
+    padding-bottom: 27px;
+  }
+
+  .correction__item {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .correction__item:last-child {
+    margin-bottom: 0;
   }
 }

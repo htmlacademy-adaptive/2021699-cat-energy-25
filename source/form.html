@@ -8,52 +8,56 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__decoration">
-        <div class="main-header__logo-image">
-          <a class="main-header__logo">
-            <img
-              src="./img/logo/logo-mobile.svg"
-              width="33"
-              height="38"
-              alt="Магазин «Энергия кота»"
-            />
-          </a>
+      <div class="main-header__wrapper">
+        <div
+          class="main-header__decoration main-header__decoration--opened main-header__decoration--nojs"
+        >
+          <div class="main-header__logo">
+            <a class="main-header__logo-image">
+              <img
+                src="./img/logo/logo-mobile.svg"
+                width="33"
+                height="38"
+                alt="Магазин «Энергия кота»"
+              />
+            </a>
+            <a class="main-header__logo-cat-energy">
+              <img
+                src="./img/logo/cat_energy-mobile.svg"
+                width="101"
+                height="18"
+                alt="«Энергия кота»"
+              />
+            </a>
+          </div>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
-        <div class="main-header__logo-cat-energy">
-          <a class="main-header__logo">
-            <img
-              src="./img/logo/cat_energy-mobile.svg"
-              width="101"
-              height="18"
-              alt="«Энергия кота»"
-            />
-          </a>
-        </div>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html"> Главная </a>
+              </li>
+              <li class="site-list__item site-list__item-catalog">
+                <a href="catalog.html"> Каталог продукции </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a> Подбор программы </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </header>
     <main class="form-container">
-      <section class="heading">
-        <div class="heading__wrapper">
-          <h1 class="heading__title heading__desc">Подбор программы</h1>
-          <p class="heading__info">
+      <section class="form-heading">
+        <div class="form-heading__wrapper">
+          <h1 class="form-heading__title form-heading__desc">
+            Подбор программы
+          </h1>
+          <p class="form-heading__info">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
         </div>
@@ -75,7 +79,7 @@
                     required
                   />
                 </div>
-                <div class="form__item">
+                <div class="form__item form__item--weight">
                   <label class="form__weight" for="weight">Вес(кг):*</label>
                   <input
                     class="form__field"
@@ -86,7 +90,7 @@
                     placeholder="7"
                   />
                 </div>
-                <div class="form__item">
+                <div class="form__item form__item--age">
                   <label class="form__age" for="age">Возраст(лет):</label>
                   <input
                     class="form__field"
@@ -105,35 +109,35 @@
               <div class="correction__list">
                 <div class="correction__item">
                   <input
-                    class="correction-body"
+                    class="visually-hidden correction__input"
                     type="radio"
                     name="weight-loss"
                     id="loss"
                     checked
                   />
-                  <label class="weight-correction" for="loss">
+                  <label class="correction__label" for="loss">
                     похудение
                   </label>
                 </div>
                 <div class="correction__item">
                   <input
-                    class="correction-body"
+                    class="visually-hidden correction__input"
                     type="radio"
                     name="weight-gain"
                     id="gain"
                   />
-                  <label class="weight-correction" for="gain">
+                  <label class="correction__label" for="gain">
                     Набор массы
                   </label>
                 </div>
                 <div class="correction__item">
                   <input
-                    class="correction-body"
+                    class="visually-hidden correction__input"
                     type="radio"
                     name="weight-unknown"
                     id="unknown"
                   />
-                  <label class="weight-correction" for="unknown">
+                  <label class="correction__label" for="unknown">
                     Не знаю (Нужен ваш совет)
                   </label>
                 </div>
@@ -141,12 +145,12 @@
             </div>
           </section>
         </div>
-        <section class="сontact">
+        <section class="сontact-owner">
           <div class="сontact-owner__wrapper">
             <h2 class="сontact-owner__title">
               Контактные данные (владельца кота)
             </h2>
-            <div class="сontact-owner">
+            <div class="сontact-owner__information">
               <div class="сontact-owner__item">
                 <label class="сontact-owner__email" for="сontact-owner__email"
                   >E-mail:*</label
@@ -161,7 +165,7 @@
                   required
                 />
               </div>
-              <div class="сontact-owner__item">
+              <div class="сontact-owner__item сontact-owner__item__tel">
                 <label class="сontact-owner__tel" for="сontact-owner__tel"
                   >Телефон:*</label
                 >
@@ -207,7 +211,7 @@
             <ul class="additionally-filter__list">
               <li class="additionally-filter__item control">
                 <input
-                  class="control__input"
+                  class="visually-hidden control__input"
                   type="checkbox"
                   name="sweetener"
                   id="control__label"
@@ -219,11 +223,10 @@
               </li>
               <li class="additionally-filter__item control">
                 <input
-                  class="control__input"
+                  class="visually-hidden control__input"
                   type="checkbox"
                   name="sweetener"
                   id="control__water"
-                  checked
                 />
                 <label class="control__label" for="control__water">
                   Питьевая вода
@@ -231,11 +234,10 @@
               </li>
               <li class="additionally-filter-item control">
                 <input
-                  class="control__input"
+                  class="visually-hidden control__input"
                   type="checkbox"
                   name="sweetener"
                   id="control__milk"
-                  checked
                 />
                 <label class="control__label" for="control__milk">
                   Молоко
@@ -243,11 +245,10 @@
               </li>
               <li class="additionally__filter__item control">
                 <input
-                  class="control__input"
+                  class="visually-hidden control__input"
                   type="checkbox"
                   name="sweetener"
                   id="control__vitamins"
-                  checked
                 />
                 <label class="control__label" for="control__vitamins">
                   Витамины
@@ -271,12 +272,15 @@
       <section class="cooperation-contacts">
         <div class="cooperation-contacts__wrapper">
           <div class="cooperation-contacts__invitation contacts">
-            <b class="contacts__title"
-              >Приглашаем<br />к сотрудничеству<br />дилеров!</b
-            >
-            <p class="contacts__text">
-              ул. Большая Конюшенная, д. 19/8 <br />Санкт-Петербург
-            </p>
+            <div class="contacts__card">
+              <b class="contacts__title"
+                >Приглашаем <br />к сотрудничеству <br />дилеров!</b
+              >
+            </div>
+            <div class="contacts__card contacts__card-address">
+              <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__city">Санкт-Петербург</p>
+            </div>
           </div>
           <div class="cooperation-contacts__location location">
             <img

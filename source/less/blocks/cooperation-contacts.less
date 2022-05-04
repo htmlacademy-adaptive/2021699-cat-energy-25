@@ -2,16 +2,19 @@
   color: #000000;
   padding: 0;
   margin: 0;
+  margin-top: -23px;
 }
 
 .cooperation-contacts__wrapper {
   background-color: hsl(0, 0%, 95%);
   width: 320px;
-  padding: 0;
+  margin: 0 auto;
 }
 
 .cooperation-contacts__invitation {
   margin: 0;
+  padding: 26px 20px;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,22 +22,34 @@
     width: 100%;
     max-width: 768px;
   }
+
+  .cooperation-contacts__invitation {
+    padding: 59px 70px 55px 70px;
+    box-sizing: border-box;
+  }
+
+  .cooperation-contacts {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .cooperation-contacts__wrapper {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     background-color: #ffffff;
+    margin: 0;
   }
 
   .cooperation-contacts {
     position: relative;
+    margin-top: 29px;
   }
 
   .cooperation-contacts__invitation {
     position: absolute;
-    top: 50%;
-    left: 110px;
+    top: 96px;
+    left: 108px;
+    padding: 59px 82px 58px 80px;
   }
 }

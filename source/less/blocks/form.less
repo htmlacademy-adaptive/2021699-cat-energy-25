@@ -2,10 +2,17 @@
   margin: 0;
   background-color: #ffffff;
   color: #000000;
+  padding: 0 20px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .form__list {
   margin: 0;
+}
+
+.form__item label {
+  padding: 12px 0;
 }
 
 .form__item {
@@ -19,32 +26,66 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-right: 2px;
+  margin-bottom: 12px;
+}
+
+.form__item--weight .form__field {
+  margin-left: 20px;
+}
+
+.form__item--age .form__field {
+  margin-left: 20px;
 }
 
 .form__wrapper {
-  width: 100%;
   max-width: 280px;
-  margin: 0 20px;
+  margin: 0 auto;
 }
 
 .form__field {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  box-sizing: border-box;
   width: 100%;
-  margin-left: 11px;
-  margin-bottom: 13px;
+  margin-left: 12px;
   font-size: 16px;
   line-height: 18px;
-  padding: 13 16px;
+  padding: 13px 16px;
+  border: 1px solid hsl(0, 0%, 91%);
+  box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
+  .form {
+    padding-left: 65px;
+    padding-right: 61px;
+    padding-bottom: 0;
+    border: none;
+  }
+
   .form__wrapper {
-    width: 100%;
-    max-width: 631px;
-    margin: 0 69px;
+    max-width: 630px;
+    margin: 0 auto;
     box-sizing: border-box;
+    margin-bottom: 74px;
+  }
+
+  .form__item label {
+    padding: 11px 0;
+  }
+
+  .form__item {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .form__field {
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 15px;
   }
 }
 
@@ -52,13 +93,19 @@
   .form__correction {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0 80px;
+    grid-gap: 0 57px;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1240px;
+    padding: 0 110px;
   }
 
   .form__wrapper {
     margin: 0;
-    width: 100%;
+    width: 569px;
+  }
+
+  .form {
+    padding: 0;
+    margin: 0;
   }
 }

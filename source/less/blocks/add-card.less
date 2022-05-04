@@ -22,6 +22,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
+  margin-top: 19px;
 }
 
 .add-card__slogan {
@@ -31,6 +33,9 @@
   line-height: 16px;
   color: #444444;
   background-color: #ffffff;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .add-card__more {
@@ -47,5 +52,43 @@
 
 .add-card__add {
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 6px;
+}
+
+@media (min-width: @tablet-width) {
+  .add-card {
+    padding: 0;
+    border: 2px solid hsl(0, 0%, 95%);
+  }
+
+  .add-card__plus {
+    width: 60px;
+    height: 60px;
+  }
+
+  .add-card__add {
+    margin-top: 52px;
+  }
+
+  .add-card__title {
+    margin: 0 auto;
+    width: 134px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  .add-card__slogan {
+    width: 167px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .add-card__title__link {
+    margin-top: 47px;
+    margin-bottom: 87px;
+  }
 }

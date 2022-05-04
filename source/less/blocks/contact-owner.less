@@ -2,6 +2,8 @@
   margin: 0;
   background-color: #ffffff;
   color: #444444;
+  margin-bottom: 23px;
+  padding: 0 20px;
 }
 
 .сontact-owner__title {
@@ -10,6 +12,13 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 33px;
+}
+
+.сontact-owner__tel {
+  padding: 13px 0;
 }
 
 .сontact-owner__item {
@@ -19,32 +28,51 @@
   font-size: 16px;
   line-height: 18px;
   margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
 .сontact-owner__email {
   display: table-cell;
   vertical-align: middle;
   white-space: nowrap;
+  padding: 13px 0;
 }
 
 .сontact-owner__wrapper {
-  width: 100%;
   max-width: 280px;
-  margin: 0 20px;
+  margin: 0 auto;
 }
 
 .сontact-owner__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
   box-sizing: border-box;
-  width: 100%;
+  width: 219px;
   margin-left: 11px;
-  margin-bottom: 14px;
+  padding: 12px 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
+  .сontact-owner {
+    padding: 0 70px;
+    padding-right: 63px;
+  }
+
   .сontact-owner__wrapper {
     width: 100%;
-    max-width: 631px;
-    margin: 0 66px;
+    max-width: 630px;
+    margin: 0 auto;
+  }
+
+  .сontact-owner__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 74px;
+    margin-bottom: 75px;
   }
 
   .сontact-owner__item {
@@ -55,6 +83,14 @@
   .сontact-owner__field {
     font-size: 20px;
     line-height: 30px;
+    width: 100%;
+    margin-left: 19px;
+    padding: 0 18px;
+    bottom: 1px;
+  }
+
+  .сontact-owner__item__tel .сontact-owner__field {
+    margin-left: 10px;
   }
 }
 
@@ -66,8 +102,37 @@
   }
 
   .сontact-owner {
+    padding: 0 110px;
+  }
+
+  .сontact-owner__information {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0 78px;
+    grid-gap: 0 80px;
+  }
+
+  .сontact-owner__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 47px;
+  }
+
+  .сontact-owner__field {
+    position: relative;
+    width: 486px;
+  }
+
+  .сontact-owner__item__tel .сontact-owner__field {
+    margin-left: 16px;
+  }
+
+  .сontact-owner__field::after {
+    background: url("../img/catalog_food/email.svg");
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 13px;
+    right: 2px;
+    top: 5px;
   }
 }
