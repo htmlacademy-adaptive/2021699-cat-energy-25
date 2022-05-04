@@ -10,11 +10,15 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .catalog__wrapper {
   max-width: 280px;
   margin: 0 auto;
+  padding-top: 25px;
 }
 
 @media (min-width: @tablet-width) {
@@ -22,10 +26,29 @@
     font-size: 36px;
     line-height: 36px;
     padding-left: 37px;
+    border-bottom: none;
   }
 
   .catalog__wrapper {
     width: 100%;
     max-width: 707px;
+    padding-top: 69px;
+    padding-bottom: 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    padding: 0 110px;
+  }
+
+  .catalog__wrapper {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .catalog__title {
+    padding: 0;
   }
 }

@@ -13,9 +13,11 @@
   color: #ffffff;
   background-size: 320px 302px;
   margin: 0;
+  padding: 0;
 }
 
 .food-function__wrapper {
+  width: 320px;
   position: relative;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -27,11 +29,11 @@
 
 .food-function__title {
   font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding: 0;
 }
 
@@ -45,7 +47,10 @@
   display: table;
   background: hsl(97, 53%, 47%);
   width: 280px;
-  padding: 7px;
+  padding: 11px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .food-function__intro {
@@ -55,6 +60,7 @@
   line-height: 14px;
   margin: 0;
   margin-bottom: 29px;
+  text-transform: uppercase;
 }
 
 @media (min-width: @tablet-width) {
@@ -62,10 +68,19 @@
     position: relative;
     text-align: left;
     padding-left: 87px;
+    margin-top: 66px;
+    padding-top: 0;
   }
 
   .food-function__wrapper {
     width: 708px;
+    margin-bottom: -3px;
+  }
+
+  .food-function__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
   }
 
   .food-function__header {
@@ -76,18 +91,21 @@
   }
 
   .food-function__intro {
-    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
   }
 
   .food-function__form {
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 17px 23px;
     text-transform: uppercase;
     position: absolute;
-    top: 294px;
-    left: 91px;
+    top: 295px;
+    left: 90px;
+    width: 242px;
   }
 
   .food-function__image {
@@ -98,6 +116,7 @@
 
 @media (min-width: @desktop-width) {
   .food-function {
+    padding: 0 105px;
     display: flex;
   }
 
@@ -109,6 +128,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 105px;
   }
 
   .food-function__image {
@@ -116,19 +136,26 @@
     height: 499px;
   }
 
+  .food-function__image img {
+    margin-top: 27px;
+    margin-left: -31px;
+  }
+
   .food-function__header {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     color: #000000;
     background-size: 50% 100%;
     background-position: right center;
     display: flex;
     width: 1440px;
-    margin-bottom: 82px;
+    margin-bottom: 132px;
   }
 
   .food-function__form {
-    width: 192px;
+    width: 244px;
     position: absolute;
+    left: 85px;
+    margin-top: 42px;
   }
 }

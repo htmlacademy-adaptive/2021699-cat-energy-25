@@ -12,6 +12,9 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 33px;
 }
 
 .сontact-owner__tel {
@@ -37,6 +40,7 @@
 }
 
 .сontact-owner__wrapper {
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -46,7 +50,7 @@
   box-sizing: border-box;
   width: 219px;
   margin-left: 11px;
-  padding: 13px 15px;
+  padding: 12px 15px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -55,12 +59,20 @@
 @media (min-width: @tablet-width) {
   .сontact-owner {
     padding: 0 70px;
+    padding-right: 63px;
   }
 
   .сontact-owner__wrapper {
     width: 100%;
-    max-width: 707px;
+    max-width: 630px;
     margin: 0 auto;
+  }
+
+  .сontact-owner__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 74px;
+    margin-bottom: 75px;
   }
 
   .сontact-owner__item {
@@ -72,6 +84,13 @@
     font-size: 20px;
     line-height: 30px;
     width: 100%;
+    margin-left: 19px;
+    padding: 0 18px;
+    bottom: 1px;
+  }
+
+  .сontact-owner__item__tel .сontact-owner__field {
+    margin-left: 10px;
   }
 }
 
@@ -89,15 +108,31 @@
   .сontact-owner__information {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0 78px;
+    grid-gap: 0 80px;
   }
 
   .сontact-owner__title {
     font-size: 36px;
     line-height: 36px;
+    margin-top: 47px;
   }
 
   .сontact-owner__field {
+    position: relative;
     width: 486px;
+  }
+
+  .сontact-owner__item__tel .сontact-owner__field {
+    margin-left: 16px;
+  }
+
+  .сontact-owner__field::after {
+    background: url("../img/catalog_food/email.svg");
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 13px;
+    right: 2px;
+    top: 5px;
   }
 }

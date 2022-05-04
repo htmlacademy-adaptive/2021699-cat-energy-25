@@ -4,6 +4,12 @@
   color: #000000;
 }
 
+.additionally__wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
 .additionally__item {
   background-color: #ffffff;
   color: #000000;
@@ -12,7 +18,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 13px;
+  margin-bottom: 42px;
 }
 
 .additionally-filter__title {
@@ -22,7 +28,7 @@
   line-height: 26px;
   color: #000000;
   text-transform: none;
-  margin-bottom: 34px;
+  margin-bottom: 38px;
 }
 
 .additionally-filter__list {
@@ -35,7 +41,7 @@
 .additionally__order {
   width: 280px;
   margin: 0 auto;
-  padding: 7px 45px;
+  padding: 10px 45px;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -56,9 +62,9 @@
   text-align: center;
 }
 
-.additionally__wrapper {
-  width: 280px;
-  margin: 0 20px;
+.additionally__field small {
+  font-size: 14px;
+  line-height: 16px;
 }
 
 @media (min-width: @tablet-width) {
@@ -67,16 +73,34 @@
   }
 
   .additionally__wrapper {
-    width: 707px;
+    max-width: 630px;
     margin: 0 auto;
+    margin-bottom: 75px;
   }
 
   .additionally-filter__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 32px 123px;
+    grid-gap: 28px 61px;
     margin-bottom: 54px;
     width: 628px;
+  }
+
+  .additionally__order {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additionally__field small {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .additionally-filter__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 67px 0;
+    margin-bottom: 55px;
   }
 
   .additionally__item-application {
@@ -98,8 +122,8 @@
 
 @media (min-width: @desktop-width) {
   .additionally__wrapper {
-    width: 1200px;
-    margin: 0;
+    max-width: 1220px;
+    margin: 0 auto;
     margin-bottom: 82px;
   }
 
@@ -107,7 +131,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 32px 105px;
-    margin-bottom: 54px;
+    margin-bottom: 62px;
     width: 1200px;
   }
 
@@ -139,5 +163,6 @@
   .additionally-filter__title {
     font-size: 36px;
     line-height: 36px;
+    margin-top: 69px;
   }
 }

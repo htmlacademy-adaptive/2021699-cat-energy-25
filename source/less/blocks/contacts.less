@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: #000000;
-  padding: 0 20px;
 }
 
 .contacts__card p {
@@ -20,6 +19,7 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  margin: 0;
 }
 
 .contacts__title {
@@ -44,8 +44,14 @@
   }
 
   .contacts {
-    width: 768px;
-    padding: 26px 70px;
+    padding: 23px 70px;
+    box-sizing: border-box;
+    grid-gap: 310px;
+  }
+
+  .contacts p {
+    text-align: end;
+    font-size: 16px;
   }
 
   .contacts__title {
@@ -57,7 +63,24 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
-    width: 565px;
     background-color: #ffffff;
+    padding: 59px 74px;
+    grid-gap: 96px;
+  }
+
+  .contacts__title {
+    width: 100%;
+  }
+
+  .contacts__text {
+    text-align: start;
+  }
+
+  .contacts p {
+    text-align: start;
+  }
+
+  .contacts__card-address {
+    width: 155px;
   }
 }

@@ -10,6 +10,7 @@
   padding-left: 20px;
   padding-right: 33px;
   margin-bottom: 20px;
+  padding-top: 23px;
 }
 
 .card-food__title {
@@ -19,6 +20,7 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .card-food__title-name {
@@ -31,14 +33,19 @@
   margin-bottom: 22px;
 }
 
+.contacts__title-city {
+  display: none;
+}
+
 .card-food__pro {
   display: inline-block;
   margin-top: 19px;
   margin-bottom: 22px;
+  padding-left: 7px;
 }
 
 .card-food__slim-icon {
-  margin-left: 15px;
+  margin-left: 11px;
 }
 
 .card-food__pro-icon {
@@ -51,11 +58,24 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  text-align: justify;
+  text-align: start;
   margin: 0;
-  padding: 23px 0;
+  padding: 21px 0;
+  padding-bottom: 27px;
 }
 
+.card-food__description--pro {
+  padding: 21px 7px;
+}
+
+.card-food__item--image {
+  margin-right: 20px;
+}
+
+.card-food__item--image-pro {
+  margin-right: 11px;
+  margin-top: -5px;
+}
 
 .card-food__description::after {
   content: "";
@@ -67,8 +87,9 @@
   background: hsl(0, 0%, 85%);
 }
 
-.card-food__item--image {
-  margin-right: 19px;
+.card-food__item--pro {
+  padding: 29px 13px;
+  padding-bottom: 0;
 }
 
 .card-food a {
@@ -92,27 +113,60 @@
     width: 708px;
     box-sizing: border-box;
     padding-left: 53px;
+    padding-top: 69px;
+    padding-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   .card-food__item--image {
     position: absolute;
-    top: 57px;
-    right: 12px;
+    top: 80px;
+    right: 62px;
     width: 200px;
     height: 211px;
     margin: 0;
   }
 
+  .card-food__title {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .card-food__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 19px;
+    padding-bottom: 31px;
+  }
+
   .card-food__slim-icon {
-    margin-left: 25px;
+    margin-left: 21px;
   }
 
   .card-food__pro-icon {
-    margin-left: 25px;
+    margin-left: 21px;
   }
 
   .card-food__text {
     width: 340px;
+  }
+
+  .card-food__item--pro {
+    padding-top: 79px;
+    padding-bottom: 6px;
+  }
+
+  .contacts__title-city {
+    display: block;
+  }
+
+  .card-food__description--pro {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 26px;
+    margin-bottom: 32px;
   }
 
   .card-food__description::after {
@@ -123,10 +177,12 @@
     width: 268px;
     height: 200px;
     right: 27px;
+    top: 96px;
   }
 
   .card-food__pro {
     margin-bottom: 57px;
+    padding: 0;
   }
 }
 
@@ -134,16 +190,69 @@
   .card-food {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 80px 10px;
+    grid-gap: 80px 79px;
     margin: 0 auto;
   }
 
   .card-food__item {
     width: 570px;
-    margin: 0 40px;
+    margin: 0;
+    padding-top: 43px;
   }
 
   .card-food__item--image {
     position: static;
+    width: 100px;
+    height: 106px;
+  }
+
+  .card-food__item--pro {
+    padding-left: 33px;
+    padding-top: 50px;
+  }
+
+  .card-food__title-name {
+    padding: 35px 60px;
+  }
+
+  .card-food__description {
+    width: 467px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .card-food__slim {
+    margin-top: 0;
+  }
+
+  .card-food__item--image-pro {
+    width: 134px;
+    height: 100px;
+    // padding-top: 74px;
+    // padding-left: 33px;
+  }
+
+  .card-food__item--slim {
+    margin-left: 40px;
+  }
+
+  .card-food__title-pro {
+    padding: 27px 48px;
+  }
+
+  .card-food__description--pro {
+    margin: 0;
+    margin-left: 20px;
+    padding-top: 29px;
+    padding-bottom: 26px;
+  }
+
+  .card-food__pro {
+    margin-top: 2px;
+    margin-left: 21px;
+  }
+
+  .card-food__title {
+    margin-bottom: 7px;
   }
 }

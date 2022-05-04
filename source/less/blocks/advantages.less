@@ -2,6 +2,7 @@
   background-color: #ffffff;
   color: #000000;
   padding: 0 20px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -11,6 +12,8 @@
   font-size: 36px;
   line-height: 40px;
   text-align: start;
+  margin: 0;
+  margin-bottom: 42px;
 }
 
 .advantages__wrapper {
@@ -41,19 +44,34 @@
 }
 
 .advantages-card__item--image {
-  margin: 0 20px 20px 0;
+  margin: 0 20px 17px 0;
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    padding: 0;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   .advantages__wrapper {
     width: 100%;
-    min-width: 708px;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 34px;
   }
 
   .advantages-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 154px;
+    gap: 38px 59px;
     counter-reset: card;
   }
 
@@ -62,7 +80,7 @@
     display: flex;
     flex-direction: column;
     width: 230px;
-    padding-top: 40px;
+    padding-top: 39px;
     padding-bottom: 57px;
     counter-increment: card;
   }
@@ -75,8 +93,8 @@
     font-size: 280px;
     color: #f2f2f2;
     z-index: -1;
-    top: 100px;
-    right: -8px;
+    top: 130px;
+    right: -6px;
   }
 
   .advantages-card__item--image {
@@ -87,20 +105,28 @@
     width: 80px;
     height: 80px;
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 29px;
   }
 
   .advantages-card__item p {
     font-size: 16px;
     line-height: 24px;
   }
+
+  .advantages-card__description-result {
+    width: 245px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .advantages {
+    padding-bottom: 136px;
+  }
+
   .advantages-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px 123px;
+    gap: 30px 100px;
   }
 
   .advantages__wrapper {
@@ -108,9 +134,21 @@
     max-width: 1220px;
     margin: 0 auto;
     padding: 70px;
+    padding-top: 62px;
   }
 
   .advantages-card__item {
     width: 100%;
+    padding-top: 28px;
+  }
+
+  .advantages-card__item::after {
+    top: 130px;
+    right: 0;
+    left: 113px;
+  }
+
+  .advantages__title {
+    margin-bottom: 40px;
   }
 }

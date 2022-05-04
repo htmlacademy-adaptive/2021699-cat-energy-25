@@ -2,7 +2,7 @@
   background-color: #ffffff;
   color: #000000;
   margin: 0;
-  margin-top: 54px;
+  margin-top: 36px;
   padding: 0 20px;
 }
 
@@ -24,7 +24,8 @@
 
 .present__image {
   color: #000000;
-  margin: 0 96px;
+  margin: 0 100px;
+  margin-bottom: 47px;
 }
 
 .present__slogan {
@@ -39,6 +40,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .present {
+    margin-bottom: 15px;
+  }
+
   .present__wrapper {
     width: 100%;
     max-width: 768px;
@@ -50,8 +55,19 @@
     height: 200px;
     display: flex;
     padding: 0;
-    padding-top: 71px;
+    padding-top: 60px;
     justify-content: space-between;
+  }
+
+  .present__image {
+    margin: 0 80px;
+  }
+
+
+  .present__slogan {
+    text-align: start;
+    padding-top: 14px;
+    margin-right: 123px;
   }
 }
 
@@ -64,14 +80,22 @@
 
   .present {
     margin: 0;
+    padding: 0;
+    width: 244px;
   }
 
   .present__food {
     display: block;
     background-size: 280px 290px;
-    width: 279px;
+    width: 244px;
     height: 289px;
     padding: 0;
     padding-top: 58px;
+  }
+
+  .present__slogan {
+    margin: 0 39px;
+    text-align: center;
+    margin-top: 33px;
   }
 }

@@ -10,14 +10,27 @@
 
 @media (min-width: @tablet-width) {
   .card-product {
-    margin: 0 30px;
+    margin: 0 10px;
     border: 1px solid hsl(0, 0%, 80%);
-    padding: 0 38px;
   }
 
   .card-product__item {
-    padding-top: 26px;
-    padding-bottom: 28px;
+    padding: 0 38px;
+    padding-top: 25px;
+    padding-bottom: 26px;
     border-bottom: 1px solid hsl(0, 0%, 80%);
+  }
+
+  .card-product__item:last-child {
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-product {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 895px;
   }
 }

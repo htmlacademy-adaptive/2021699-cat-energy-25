@@ -5,12 +5,13 @@
 }
 
 .heading__decoration {
-  padding: 27px 0 41px 0;
+  padding: 27px 0 40px 0;
   border-bottom: 1px solid hsl(0, 0%, 92%);
 }
 
 .heading__wrapper {
   margin: 0 auto;
+  max-width: 280px;
 }
 
 .heading__title {
@@ -20,17 +21,6 @@
   line-height: 36px;
   text-align: start;
   margin: 0;
-  margin-bottom: 37px;
-}
-
-.heading__info {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 39px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,6 +33,11 @@
   .heading__title {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .heading__decoration {
+    padding-top: 64px;
+    padding-bottom: 163px;
   }
 
   .heading__info {
@@ -61,7 +56,6 @@
 
   .heading {
     padding: 0 110px;
-    padding-top: 73px;
   }
 
   .heading__title {
@@ -70,5 +64,10 @@
 
   .heading__info {
     padding: 0;
+  }
+
+  .heading__decoration {
+    padding-top: 67px;
+    padding-bottom: 166px;
   }
 }

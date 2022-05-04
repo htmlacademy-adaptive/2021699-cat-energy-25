@@ -1,7 +1,6 @@
 .food-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 14px;
 }
 
 .food-item__image {
@@ -45,6 +44,7 @@
   color: #444444;
   margin: 0;
   padding: 0;
+  margin-top: 15px;
 }
 
 .food-item__item {
@@ -61,7 +61,8 @@
 
 .food-item__description {
   list-style-type: none;
-  width: 50%;
+  width: 49%;
+  text-align: end;
 }
 
 .food-item__title {
@@ -73,7 +74,6 @@
   list-style-type: none;
   color: #222222;
   margin: 0;
-  margin-bottom: 18px;
 }
 
 .food-item__weight {
@@ -87,10 +87,58 @@
   margin: 0;
 }
 
+.food-item__image-chicken--average {
+  padding-top: 14px;
+}
+
+.food-item__image-chicken--big {
+  padding-top: 11px;
+}
+
 .food-item__image-card {
   margin: 0 auto;
+}
+
+.food-item__chicken-big .food-item__order {
+  margin-top: 10px;
+}
+
+.food-item__fish img {
+  padding-top: 23px;
+}
+
+.food-item__fish-big img {
+  padding-top: 10px;
+}
+
+.food-item__fish-big .food-item__order {
+  margin-top: 11px;
+}
+
+.food-item__buckwheat img {
+  padding-top: 30px;
+}
+
+.food-item__buckwheat .food-item__order {
+  margin-top: 16px;
+}
+
+.food-item__buckwheat-big img {
+  padding-top: 10px;
+}
+
+.food-item__buckwheat-big .food-item__order {
+  margin-top: 11px;
+}
+
+.food-item__rice img {
+  padding-top: 25px;
+}
+
+.food-item__rice .food-item__order {
   margin-top: 14px;
 }
+
 
 @media (min-width: @tablet-width) {
   .food-item__br {
@@ -104,6 +152,18 @@
     padding: 36px;
   }
 
+  .food-item__image img {
+    width: 161px;
+    height: 172px;
+    margin-top: -95px;
+  }
+
+  .food-item__image-big img {
+    width: 168px;
+    height: 206px;
+    margin-top: -120px;
+  }
+
   .food-item__title {
     text-align: center;
     width: 140px;
@@ -111,7 +171,7 @@
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
-    margin-bottom: 21px;
+    margin-top: 32px;
   }
 
   .food-item__description {
@@ -121,12 +181,122 @@
   .food-item__list {
     font-size: 16px;
     line-height: 16px;
+    margin-top: 13px;
+    margin-bottom: 12px;
   }
 
   .food-item__item {
-    margin-bottom: 9px;
-    padding-top: 7px;
-    padding-bottom: 9px;
+    padding-top: 8px;
+    padding-bottom: 7px;
     border-bottom: 1px solid hsl(0, 0%, 80%);
+  }
+
+  .food-item__chicken-big .food-item__title {
+    margin-top: 26px;
+  }
+
+  .food-item__chicken-big .food-item__list {
+    margin-bottom: 23px;
+  }
+
+  .food-item__fish img {
+    margin-top: -104px;
+  }
+
+  .food-item__fish-big .food-item__title {
+    margin-top: 29px;
+  }
+
+  .food-item__fish-big .food-item__list {
+    margin-top: 12px;
+    margin-bottom: 21px;
+  }
+
+  .food-item__buckwheat img {
+    margin-top: -111px;
+  }
+
+  .food-item__buckwheat .food-item__order {
+    margin-top: 20px;
+  }
+
+  .food-item__buckwheat-big .food-item__title {
+    margin-top: 28px;
+  }
+
+  .food-item__buckwheat-big .food-item__order {
+    margin-top: 20px;
+  }
+
+  .food-item__rice img {
+    margin-top: -106px;
+  }
+
+  .food-item__rice .food-item__order {
+    margin-top: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .food-item__image img {
+    width: 161px;
+    height: 172px;
+    margin-top: -107px;
+  }
+
+  .food-item__chicken-big img {
+    width: 172px;
+    height: 206px;
+    margin-top: -133px;
+  }
+
+  .food-item__chicken-big .food-item__title {
+    margin-top: 36px;
+  }
+
+  .food-item__title {
+    line-height: 21px;
+    margin: 0 16px;
+    margin-top: 41px;
+  }
+
+  .food-item {
+    padding: 40px;
+  }
+
+  .food-item__list {
+    margin-top: 17px;
+  }
+
+  .food-item__fish img {
+    margin-top: -116px;
+  }
+
+  .food-item__fish-big img {
+    width: 172px;
+    height: 199px;
+    margin-top: -131px;
+  }
+
+  .food-item__fish-big .food-item__title {
+    margin-top: 43px;
+  }
+
+  .food-item__buckwheat img {
+    margin-top: -123px;
+  }
+
+  .food-item__buckwheat-big img {
+    width: 172px;
+    height: 196px;
+    margin-top: -130px;
+  }
+
+  .food-item__buckwheat-big .food-item__title {
+    margin-top: 43px;
+  }
+
+  .food-item__rice img {
+    margin-top: -118px;
   }
 }
