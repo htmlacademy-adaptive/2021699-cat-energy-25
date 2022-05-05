@@ -14,16 +14,26 @@
         >
           <div class="main-header__logo">
             <a class="main-header__logo-image">
-              <img
-                src="./img/logo/logo-mobile.svg"
-                width="33"
-                height="38"
-                alt="Магазин «Энергия кота»"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/logo/logo-desktop.svg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/logo/logo-tablet.svg"
+                />
+                <img
+                  src="./img/logo/logo-mobile.svg"
+                  width="33"
+                  height="38"
+                  alt="Магазин «Энергия кота»"
+                />
+              </picture>
             </a>
             <a class="main-header__logo-cat-energy">
               <img
-                src="./img/logo/cat_energy-mobile.svg"
+                src="./img/logo/logo-mobile_energy.svg"
                 width="101"
                 height="18"
                 alt="«Энергия кота»"
@@ -62,11 +72,21 @@
               </h2>
               <p class="food-function__intro">Занялся собой? Займись котом!</p>
             </div>
-            <img
-              class="food-function__image"
-              src="./img/index-can.svg"
-              alt="Корм для котов"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="./img/index_food/food-desktop.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/index_food/food-tablet.png"
+              />
+              <img
+                class="food-function__image"
+                src="./img/index_food/food-mobile.png"
+                alt="Корм для котов"
+              />
+            </picture>
             <a class="food-function__form choice-food" href="form.html">
               Подобрать программу
             </a>
@@ -278,22 +298,43 @@
           <div class="example__results slider">
             <div class="slider__image slider__list">
               <div class="slider__image-before">
-                <img
-                  class="slider__item"
-                  src="./img/cat-example.svg"
-                  alt="Кот с лишним весом"
-                  width="280"
-                  height="232"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="./img/cat-fat.png, ./img/cat-fat@2x.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./img/cat-fat.png, ./img/cat-fat@2x.png"
+                  />
+                  <img
+                    class="slider__item"
+                    src="./img/cat-before-mobile.png"
+                    srcset="./img/cat-before-mobile@2x.png"
+                    alt="Кот с лишним весом"
+                    width="280"
+                    height="232"
+                  />
+                </picture>
               </div>
               <div class="slider__image-after">
-                <img
-                  class="slider__item"
-                  src="./img/cat-example_after.svg"
-                  alt="Кот с умеренным весом"
-                  width="280"
-                  height="232"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="./img/cat-skinny.png, ./img/cat-skinny@2x.png"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="./img/cat-skinny.png, ./img/cat-skinny@2x.png"
+                  />
+                  <img
+                    class="slider__item"
+                    src="./img/cat-after-mobile.png"
+                    alt="Кот с умеренным весом"
+                    width="280"
+                    height="232"
+                  />
+                </picture>
               </div>
             </div>
             <div class="slider__text">
@@ -331,11 +372,28 @@
           </div>
           <div class="main-contacts__image location location--current">
             <h2 class="visually-hidden">Адрес магазина на карте</h2>
-            <img
-              class="location__image"
-              src="./img/location/map_mobile.png"
-              alt="Локация магазина функционального питания для кошек"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/location/map_desktop.png,
+                  ./img/location/map_desktop@2x.png
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/location/map_tablet.png,
+                  ./img/location/map_tablet@2x.png
+                "
+              />
+              <img
+                class="location__image"
+                src="./img/location/map_mobile.png"
+                srcset="./img/location/map_mobile@2x.png"
+                alt="Локация магазина функционального питания для кошек"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -345,7 +403,7 @@
         <div class="main-footer__logo">
           <img
             class="logo-image"
-            src="./img/logo/cat_energy-mobile.svg"
+            src="./img/logo/logo-mobile_energy.svg"
             alt="Логотип: «Энергия кота»"
             width="128"
             height="24"

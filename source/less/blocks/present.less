@@ -19,7 +19,7 @@
   width: 279px;
   height: 289px;
   padding: 0;
-  padding-top: 58px;
+  padding-top: 57px;
 }
 
 .present__image {
@@ -41,7 +41,7 @@
 
 @media (min-width: @tablet-width) {
   .present {
-    margin-bottom: 15px;
+    margin-bottom: 74px;
   }
 
   .present__wrapper {
@@ -55,18 +55,26 @@
     height: 200px;
     display: flex;
     padding: 0;
-    padding-top: 60px;
     justify-content: space-between;
   }
 
+  @media (min-resolution: 2dppx) {
+    .present__food {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog_food/present/fond-tablet@2x.png");
+      background-size: 707px auto;
+      width: 707px;
+      height: 200px;
+    }
+  }
+
   .present__image {
-    margin: 0 80px;
+    margin: 60px 78px;
   }
 
 
   .present__slogan {
     text-align: start;
-    padding-top: 14px;
+    margin-top: 74px;
     margin-right: 123px;
   }
 }
@@ -93,9 +101,21 @@
     padding-top: 58px;
   }
 
+  .present__image {
+    margin: 0 84px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .present__food {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog_food/present/fond-desktop@2x.png");
+      width: 244px;
+      height: 289px;
+    }
+  }
+
   .present__slogan {
     margin: 0 39px;
     text-align: center;
-    margin-top: 33px;
+    margin-top: 47px;
   }
 }

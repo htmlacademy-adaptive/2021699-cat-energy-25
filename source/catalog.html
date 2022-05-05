@@ -14,16 +14,26 @@
         >
           <div class="main-header__logo">
             <a class="main-header__logo-image">
-              <img
-                src="./img/logo/logo-mobile.svg"
-                width="33"
-                height="38"
-                alt="Магазин «Энергия кота»"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/logo/logo-desktop.svg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/logo/logo-tablet.svg"
+                />
+                <img
+                  src="./img/logo/logo-mobile.svg"
+                  width="33"
+                  height="38"
+                  alt="Магазин «Энергия кота»"
+                />
+              </picture>
             </a>
             <a class="main-header__logo-cat-energy">
               <img
-                src="./img/logo/cat_energy-mobile.svg"
+                src="./img/logo/logo-mobile_energy.svg"
                 width="101"
                 height="18"
                 alt="«Энергия кота»"
@@ -67,11 +77,29 @@
             <li class="food-list__item food-item food-item__chicken">
               <div class="food-item__image-card">
                 <a class="food-item__image" href="#">
-                  <img
-                    class="food-item__image-chicken food-item__image-chicken--average"
-                    src="./img/catalog_food/chicken-average.svg"
-                    alt="Корм со вкусом курицы,объем-средний"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/chicken/chicken-desktop.png,
+                        ./img/catalog_food/chicken/chicken-desktop@2x.png
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/chicken/chicken-tablet.png,
+                        ./img/catalog_food/chicken/chicken-tablet@2x.png
+                      "
+                    />
+                    <img
+                      class="food-item__image-chicken food-item__image-chicken--average"
+                      src="./img/catalog_food/chicken/chicken-mobile.png"
+                      srcset="./img/catalog_food/chicken/chicken-mobile@2x.png"
+                      width="68" height="86"
+                      alt="Корм со вкусом курицы,объем-средний"
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="food-item__card">
@@ -102,11 +130,31 @@
             <li class="food-list__item food-item food-item__chicken-big">
               <div class="food-item__image-card">
                 <a class="food-item__image food-item__image-big" href="#">
-                  <img
-                    class="food-item__image-chicken food-item__image-chicken--big"
-                    src="./img/catalog_food/chicken-big.svg"
-                    alt="Корм со вкусом курицы,объем-большой"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/chicken-big/chicken-big-desktop.png,
+                        ./img/catalog_food/chicken-big/chicken-big-desktop@2x.png
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/chicken-big/chicken-big-tablet.png,
+                        ./img/catalog_food/chicken-big/chicken-big-tablet@2x.png
+                      "
+                    />
+                    <img
+                      class="food-item__image-chicken food-item__image-chicken--big"
+                      src=" ./img/catalog_food/chicken-big/chicken-big-mobile.png"
+                      srcset="
+                        ./img/catalog_food/chicken-big/chicken-big-mobile@2x.png
+                      "
+                      width="84" height="100"
+                      alt="Корм со вкусом курицы,объем-большой"
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="food-item__card">
@@ -138,11 +186,30 @@
             <li class="food-list__item food-item food-item__fish">
               <div class="food-item__image-card">
                 <a class="food-item__image" href="#">
-                  <img
-                    class="food-item__image-fish food-item__image-fish--average"
-                    src="./img/catalog_food/fish-average.svg"
-                    alt="Корм со вкусом рыбы,объем-средний"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/fish/fish-desktop.png,
+                        ./img/catalog_food/fish/fish-desktop@2x.png
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/fish/fish-tablet.png,
+                        ./img/catalog_food/fish/fish-tablet@2x.png
+                      "
+                    />
+                    <img
+                      class="food-item__image-fish food-item__image-fish--average"
+                      src="./img/catalog_food/fish/fish-mobile.png"
+                      srcset="./img/catalog_food/fish/fish-mobile@2x.png"
+                      width="68"
+                      height="78"
+                      alt="Корм со вкусом рыбы,объем-средний"
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="food-item__card">
@@ -174,11 +241,32 @@
             <li class="food-list__item food-item food-item__fish-big">
               <div class="food-item__image-card">
                 <a class="food-item__image food-item__image-big" href="#">
-                  <img
-                    class="food-item__image-fish food-item__image-fish--big"
-                    src="./img/catalog_food/fish-big.svg"
-                    alt="Корм со вкусом рыбы,объем-большой"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/fish-big/fish-big-desktop.png,
+                        ./img/catalog_food/fish-big/fish-big-desktop@2x.png
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/fish-big/fish-big-tablet.png,
+                        ./img/catalog_food/fish-big/fish-big-tablet@2x.png
+                      "
+                    />
+                    <img
+                      class="food-item__image-fish food-item__image-fish--big"
+                      src="./img/catalog_food/fish-big/fish-big-mobile.png"
+                      srcset="
+                        ./img/catalog_food/fish-big/fish-big-mobile@2x.png
+                      "
+                      width="84"
+                      height="100"
+                      alt="Корм со вкусом рыбы,объем-большой"
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="food-item__card">
@@ -210,11 +298,31 @@
             <li class="food-list__item food-item food-item__buckwheat">
               <div class="food-item__image-card">
                 <a class="food-item__image" href="#">
-                  <img
-                    class="food-item__image-buckwheat food-item__image-buckwheat--average"
-                    src="./img/catalog_food/buckwheat-average.svg"
-                    alt="Корм со вкусом гречки,объем-средний"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat/buckwheat-desktop.png,
+                        ./img/catalog_food/buckwheat/buckwheat-desktop@2x.png
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat/buckwheat-tablet.png,
+                        ./img/catalog_food/buckwheat/buckwheat-tablet@2x.png
+                      "
+                    />
+                    <img
+                      class="food-item__image-buckwheat food-item__image-buckwheat--average"
+                      src="./img/catalog_food/buckwheat/buckwheat-mobile.png"
+                      srcset="
+                        ./img/catalog_food/buckwheat/buckwheat-mobile@2x.png
+                      " width="68"
+                      height="78"
+                      alt="Корм со вкусом гречки,объем-средний"
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="food-item__card">
@@ -246,9 +354,26 @@
             <li class="food-list__item food-item food-item__buckwheat-big">
               <div class="food-item__image-card">
                 <a class="food-item__image food-item__image-big" href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-desktop.png,
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-desktop@2x.png
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-tablet.png,
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-tablet@2x.png
+                      "
+                    />
                   <img
                     class="food-item__image-buckwheat food-item__image-buckwheat--big"
-                    src="./img/catalog_food/buckwheat-big.svg"
+                    src="./img/catalog_food/buckwheat-big/buckwheat-big-mobile.png"
+                    srcset="./img/catalog_food/buckwheat-big/buckwheat-big-mobile.png"
+                    width="84" height="100"
                     alt="Корм со вкусом гречки,объем-большой"
                   />
                 </a>
@@ -282,11 +407,30 @@
             <li class="food-list__item food-item food-item__rice">
               <div class="food-item__image-card">
                 <a class="food-item__image" href="#">
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/rice/rice-desktop.png,
+                        ./img/catalog_food/rice/rice-desktop@2x.png
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/rice/rice-tablet.png,
+                        ./img/catalog_food/rice/rice-tablet@2x.png
+                      "
+                    />
                   <img
                     class="food-item__image-rice food-item__image-rice--average"
-                    src="./img/catalog_food/rice-average.svg"
+                    src="./img/catalog_food/rice/rice-mobile.png"
+                    srcset="./img/catalog_food/rice/rice-mobile@2x.png"
+                    width="72"
+                    height="84"
                     alt="Корм со вкусом риса,объем-средний"
                   />
+                  </picture>
                 </a>
               </div>
               <div class="food-item__card">
@@ -405,22 +549,38 @@
       <section class="cooperation-contacts">
         <div class="cooperation-contacts__wrapper">
           <div class="cooperation-contacts__invitation contacts">
-            <div class="contacts__card">
-              <b class="contacts__title"
-                >Приглашаем <br />к сотрудничеству <br />дилеров!</b
-              >
-            </div>
-            <div class="contacts__card contacts__card-address">
-              <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="contacts__city">Санкт-Петербург</p>
-            </div>
+            <b class="contacts__title">
+              Приглашаем<br />к сотрудничеству<br />дилеров!
+            </b>
+            <p class="contacts__text">
+              ул. Большая<br />Конюшенная, д. 19/8<br /><br
+                class="contacts__title-city"
+              />Санкт-Петербург
+            </p>
           </div>
           <div class="cooperation-contacts__location location">
-            <img
-              class="location__image"
-              src="./img/location/map_mobile.png"
-              alt="Адрес магазина на карте"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/location/map_desktop.png,
+                  ./img/location/map_desktop@2x.png
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/location/map_tablet.png,
+                  ./img/location/map_tablet@2x.png
+                "
+              />
+              <img
+                class="location__image"
+                src="./img/location/map_mobile.png"
+                srcset="./img/location/map_mobile@2x.png"
+                alt="Локация магазина функционального питания для кошек"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -430,7 +590,7 @@
         <div class="main-footer__logo">
           <img
             class="logo-image"
-            src="./img/logo/cat_energy-mobile.svg"
+            src="./img/logo/logo-mobile_energy.svg"
             alt="Логотип: «Энергия кота»"
             width="128"
             height="24"
