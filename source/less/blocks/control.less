@@ -8,15 +8,27 @@
   padding-left: 46px;
 }
 
+.control__label:disabled {
+  opacity: 0.3;
+}
+
 .control__label::before {
   position: absolute;
   content: "";
   width: 30px;
   height: 30px;
-  border: 1px solid hsl(0, 0%, 80%);
+  border: 1px solid #cdcdcd;
   box-sizing: border-box;
   left: 0;
   top: 0;
+}
+
+.control__label::before:hover {
+  border: 1px solid #bababa;
+}
+
+.control__label::before:disabled {
+  border: 1px solid #bababa;
 }
 
 .control__label::after {
@@ -24,7 +36,7 @@
   content: "";
   width: 18px;
   height: 14px;
-  background: url("../img/vector.svg");
+  background-image: url("../img/vector.svg");
   left: 6px;
   top: 6px;
   display: none;

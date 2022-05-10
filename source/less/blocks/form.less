@@ -51,9 +51,21 @@
   font-size: 16px;
   line-height: 18px;
   padding: 13px 16px;
-  border: 1px solid hsl(0, 0%, 91%);
+  border: 1px solid #e7e7e7;
   box-sizing: border-box;
   text-transform: uppercase;
+}
+
+.food-field:hover {
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+.food-field:focus {
+  border: 2px solid #444444;
+}
+
+.form__field--error {
+  border: 2px solid hsl(0, 100%, 75%);
 }
 
 @media (min-width: @tablet-width) {

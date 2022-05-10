@@ -205,7 +205,7 @@
 @media (min-width: @desktop-width) {
   .example {
     background-color: hsl(0, 0%, 95%);
-    padding: 0 110px;
+    padding: 0;
   }
 
   .example__description-review br {
@@ -254,9 +254,11 @@
     width: 100%;
     max-width: 1440px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 505px 1fr;
     margin: 0 auto;
     background-color: hsl(0, 0%, 95%);
+    padding-left: 110px;
+    box-sizing: border-box;
   }
 
   .example__item-total {
