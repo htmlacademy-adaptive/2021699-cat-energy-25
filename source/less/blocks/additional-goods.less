@@ -18,13 +18,15 @@
   }
 
   .additional-goods {
-    margin-top: 46px;
+    margin-top: 43px;
     margin-bottom: 66px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .additional-goods__wrapper {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 1220px;
   }
@@ -32,7 +34,9 @@
   .additional-goods__present {
     display: flex;
     justify-content: space-between;
-    margin: 0 110px;
+    padding: 0 110px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 
   .additional-goods {

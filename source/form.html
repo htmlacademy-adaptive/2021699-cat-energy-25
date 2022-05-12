@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./favicons/32.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -14,16 +18,26 @@
         >
           <div class="main-header__logo">
             <a class="main-header__logo-image">
-              <img
-                src="./img/logo/logo-mobile.svg"
-                width="33"
-                height="38"
-                alt="Магазин «Энергия кота»"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./img/logo/logo-desktop.svg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/logo/logo-tablet.svg"
+                />
+                <img
+                  src="./img/logo/logo-mobile.svg"
+                  width="33"
+                  height="38"
+                  alt="Магазин «Энергия кота»"
+                />
+              </picture>
             </a>
             <a class="main-header__logo-cat-energy">
               <img
-                src="./img/logo/cat_energy-mobile.svg"
+                src="./img/logo/logo-mobile_energy.svg"
                 width="101"
                 height="18"
                 alt="«Энергия кота»"
@@ -63,87 +77,89 @@
         </div>
       </section>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form__correction">
-          <section class="form">
-            <div class="form__wrapper">
-              <div class="form__list">
-                <div class="form__item">
-                  <label class="form__name" for="name">Имя:*</label>
-                  <input
-                    class="form__field"
-                    type="text"
-                    name="user"
-                    id="name"
-                    autocomplete="on"
-                    placeholder="Барсик"
-                    required
-                  />
-                </div>
-                <div class="form__item form__item--weight">
-                  <label class="form__weight" for="weight">Вес(кг):*</label>
-                  <input
-                    class="form__field"
-                    type="text"
-                    name="weight"
-                    id="weight"
-                    autocomplete="on"
-                    placeholder="7"
-                  />
-                </div>
-                <div class="form__item form__item--age">
-                  <label class="form__age" for="age">Возраст(лет):</label>
-                  <input
-                    class="form__field"
-                    type="text"
-                    name="age"
-                    id="age"
-                    autocomplete="on"
-                    placeholder="7"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="correction">
-            <div class="correction__wrapper">
-              <div class="correction__list">
-                <div class="correction__item">
-                  <input
-                    class="visually-hidden correction__input"
-                    type="radio"
-                    name="weight-loss"
-                    id="loss"
-                    checked
-                  />
-                  <label class="correction__label" for="loss">
-                    похудение
-                  </label>
-                </div>
-                <div class="correction__item">
-                  <input
-                    class="visually-hidden correction__input"
-                    type="radio"
-                    name="weight-gain"
-                    id="gain"
-                  />
-                  <label class="correction__label" for="gain">
-                    Набор массы
-                  </label>
-                </div>
-                <div class="correction__item">
-                  <input
-                    class="visually-hidden correction__input"
-                    type="radio"
-                    name="weight-unknown"
-                    id="unknown"
-                  />
-                  <label class="correction__label" for="unknown">
-                    Не знаю (Нужен ваш совет)
-                  </label>
+        <div class="form__correction__wrapper">
+          <div class="form__correction">
+            <section class="form">
+              <div class="form__wrapper">
+                <div class="form__list">
+                  <div class="form__item">
+                    <label class="form__name" for="name">Имя:*</label>
+                    <input
+                      class="form__field"
+                      type="text"
+                      name="user"
+                      id="name"
+                      autocomplete="on"
+                      placeholder="Барсик"
+                      required
+                    />
+                  </div>
+                  <div class="form__item form__item--weight">
+                    <label class="form__weight" for="weight">Вес(кг):*</label>
+                    <input
+                      class="form__field"
+                      type="text"
+                      name="weight"
+                      id="weight"
+                      autocomplete="on"
+                      placeholder="7"
+                    />
+                  </div>
+                  <div class="form__item form__item--age">
+                    <label class="form__age" for="age">Возраст(лет):</label>
+                    <input
+                      class="form__field"
+                      type="text"
+                      name="age"
+                      id="age"
+                      autocomplete="on"
+                      placeholder="7"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+            <section class="correction">
+              <div class="correction__wrapper">
+                <div class="correction__list">
+                  <div class="correction__item">
+                    <input
+                      class="visually-hidden correction__input"
+                      type="radio"
+                      name="weight-loss"
+                      id="loss"
+                      checked
+                    />
+                    <label class="correction__label" for="loss">
+                      похудение
+                    </label>
+                  </div>
+                  <div class="correction__item">
+                    <input
+                      class="visually-hidden correction__input"
+                      type="radio"
+                      name="weight-gain"
+                      id="gain"
+                    />
+                    <label class="correction__label" for="gain">
+                      Набор массы
+                    </label>
+                  </div>
+                  <div class="correction__item">
+                    <input
+                      class="visually-hidden correction__input"
+                      type="radio"
+                      name="weight-unknown"
+                      id="unknown"
+                    />
+                    <label class="correction__label" for="unknown">
+                      Не знаю (Нужен ваш совет)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
         <section class="сontact-owner">
           <div class="сontact-owner__wrapper">
@@ -272,22 +288,38 @@
       <section class="cooperation-contacts">
         <div class="cooperation-contacts__wrapper">
           <div class="cooperation-contacts__invitation contacts">
-            <div class="contacts__card">
-              <b class="contacts__title"
-                >Приглашаем <br />к сотрудничеству <br />дилеров!</b
-              >
-            </div>
-            <div class="contacts__card contacts__card-address">
-              <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="contacts__city">Санкт-Петербург</p>
-            </div>
+            <b class="contacts__title">
+              Приглашаем<br />к сотрудничеству<br />дилеров!
+            </b>
+            <p class="contacts__text">
+              ул. Большая<br />Конюшенная, д. 19/8<br /><br
+                class="contacts__title-city"
+              />Санкт-Петербург
+            </p>
           </div>
           <div class="cooperation-contacts__location location">
-            <img
-              class="location__image"
-              src="./img/location/map_mobile.png"
-              alt="Адрес магазина на карте"
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/location/map_desktop.png,
+                  ./img/location/map_desktop@2x.png
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/location/map_tablet.png,
+                  ./img/location/map_tablet@2x.png
+                "
+              />
+              <img
+                class="location__image"
+                src="./img/location/map_mobile.png"
+                srcset="./img/location/map_mobile@2x.png"
+                alt="Локация магазина функционального питания для кошек"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -297,7 +329,7 @@
         <div class="main-footer__logo">
           <img
             class="logo-image"
-            src="./img/logo/cat_energy-mobile.svg"
+            src="./img/logo/logo-mobile_energy.svg"
             alt="Логотип: «Энергия кота»"
             width="128"
             height="24"
