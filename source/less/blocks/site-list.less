@@ -15,6 +15,15 @@
   border-top: 1px solid hsl(0, 0%, 90%);
 }
 
+.site-list__item a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.site-list__item a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
 @media (min-width: @tablet-width) {
   .site-list {
     width: 440px;
@@ -75,5 +84,31 @@
 
   .site-list__item {
     margin-right: 36px;
+  }
+
+  .site-list__item--color {
+    position: relative;
+  }
+
+  .site-list__item--color::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: #ffffff;
+  }
+
+  .site-list__item__index a {
+    color: #ffffff;
+  }
+
+  .site-list__item__index a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .site-list__item__index a:focus {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

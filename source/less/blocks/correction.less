@@ -47,6 +47,22 @@
   top: 0;
 }
 
+.correction__label::before:hover {
+  border: 1px solid hsl(0, 0%, 73%);
+}
+
+.correction__label::before:disabled {
+  border: 1px solid rgba(186, 186, 186, 0.3);
+}
+
+.correction__label:disabled {
+  color: rgba(186, 186, 186, 0.3);
+}
+
+.correction__label::after:disabled {
+  background-color: rgba(104, 183, 56, 0.3);
+}
+
 .correction__label::after {
   position: absolute;
   content: "";
@@ -74,6 +90,7 @@
     border: 1px solid hsl(0, 0%, 85%);
     margin: 0 auto;
     padding-bottom: 2px;
+    box-sizing: border-box;
   }
 
   .correction__item {
@@ -107,7 +124,7 @@
     height: 18px;
     background-color: hsl(97, 53%, 47%);
     left: 11px;
-    top: 9px;
+    top: 6px;
     display: none;
   }
 }

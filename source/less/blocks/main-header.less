@@ -1,7 +1,6 @@
 .main-header {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   color: #000000;
   width: auto;
   min-height: 66px;
@@ -29,7 +28,7 @@
 .main-header__decoration--closed .main-header__toggle::before {
   content: "";
   position: absolute;
-  top: 24px;
+  top: 0;
   right: 20px;
   width: 24px;
   height: 2px;
@@ -45,7 +44,7 @@
 }
 
 .main-header__decoration--opened .main-header__toggle {
-  top: 24px;
+  top: 7px;
   right: 20px;
 
   &::before,
@@ -58,6 +57,7 @@
     height: 2px;
     background-color: #000000;
   }
+
 
   &::before {
     transform: rotate(45deg);
@@ -86,6 +86,14 @@
   margin-top: 10px;
 }
 
+.main-header__logo-image:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo-image:active {
+  opacity: 0.6;
+}
+
 .main-header__decoration {
   display: flex;
   position: relative;
@@ -96,6 +104,10 @@
 
 .main-header__logo-cat-energy {
   margin-top: 23px;
+}
+
+.main-header__decoration--nojs .main-header__toggle {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -134,6 +146,7 @@
 @media (min-width: @desktop-width) {
   .main-header {
     padding-top: 53px;
+    background-color: none;
   }
 
   .main-header__wrapper {
