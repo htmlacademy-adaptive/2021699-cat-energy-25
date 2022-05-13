@@ -19,6 +19,7 @@ export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
+    .pipe(gulp.dest('build/css'))
     .pipe(postcss([
       autoprefixer(),csso()
     ]))
@@ -37,6 +38,7 @@ const html= () => {
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
+.pipe(gulp.dest('build/js'))
 .pipe(terser())
 .pipe(gulp.dest('build/js'))
 }
@@ -59,12 +61,12 @@ const createWebp = () => {
   .pipe(squoosh({
     webp:{}
   }))
-  .pipe(gulp.dest('source/img'))
+  .pipe(gulp.dest('build/img'))
 }
 // SVG
 
-export const svg = () =>
- gulp.src('source/img/*.svg')
+const svg = () =>
+  gulp.src('source/img/*.svg')
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 

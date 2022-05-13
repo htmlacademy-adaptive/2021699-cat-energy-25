@@ -47,20 +47,16 @@
   top: 0;
 }
 
-.correction__label::before:hover {
+.correction__input:hover + label::before {
   border: 1px solid hsl(0, 0%, 73%);
 }
 
-.correction__label::before:disabled {
-  border: 1px solid rgba(186, 186, 186, 0.3);
+.correction__input:disabled + label::before {
+  opacity: 0.3;
 }
 
 .correction__label:disabled {
-  color: rgba(186, 186, 186, 0.3);
-}
-
-.correction__label::after:disabled {
-  background-color: rgba(104, 183, 56, 0.3);
+  opacity: 0.3;
 }
 
 .correction__label::after {
