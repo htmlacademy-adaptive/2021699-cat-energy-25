@@ -81,20 +81,23 @@
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid hsl(0, 0%, 91%);
+  position: relative;
 }
 
 .сontact-owner__field__email {
   position: absolute;
   content: "";
-  top: 15px;
-  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
   stroke: #222222;
 }
 
 .сontact-owner__field__phone {
   position: absolute;
   content: "";
-  top: 13px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 14px;
   fill: #000000;
 }
@@ -106,6 +109,14 @@
 .сontact-owner__field__phone:focus {
   fill: #68b738;
 }
+
+// .сontact-owner__item__email {
+//   position: relative;
+// }
+
+// .сontact-owner__item__phone {
+//   position: relative;
+// }
 
 .сontact-owner__field:hover {
   outline: 1px solid hsl(0, 0%, 80%);

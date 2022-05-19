@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="./favicons/32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
     <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
     <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
@@ -255,9 +255,10 @@
       <section class="comment">
         <div class="comment__wrapper">
           <div class="comment__owner">
-            <h2 class="comment__title">Комментарий</h2>
             <div class="comment__inner">
-              <label class="comment__text" for="comment-field"></label>
+              <label class="comment__title" for="comment-field"
+                >Комментарий</label
+              >
               <textarea
                 class="comment__field"
                 name="comment"
@@ -361,7 +362,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <a class="main-footer__logo-img">
+          <a class="main-footer__logo-img" href="index.html">
             <img
               class="logo-image"
               src="./img/logo/logo-mobile_energy.svg"
@@ -447,6 +448,7 @@
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Логотип HTML Academy"
             ><img
               class="copyright__logo"
               src="./img/htmlacademy.svg"
@@ -455,6 +457,7 @@
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
             title="Ссылка на сайт htmlacademy"
+            aria-label="Ссылка на сайт htmlacademy"
             ><svg
               class="copyright__logo-icon"
               width="27"
@@ -470,5 +473,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
