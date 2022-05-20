@@ -16,10 +16,10 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <div
-          class="main-header__decoration main-header__decoration--closed main-header__decoration--nojs"
-        >
+      <div
+        class="main-header__wrapper main-header__wrapper--opened main-header__wrapper--nojs"
+      >
+        <div class="main-header__decoration">
           <div class="main-header__logo">
             <a class="main-header__logo-image"
               ><picture
@@ -43,6 +43,33 @@
             /></a>
           </div>
           <button class="main-header__toggle" type="button">
+            <svg
+              class="main-header__show"
+              width="24"
+              height="18"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke="#000"
+                stroke-width="1.5"
+                d="M0 1.25h24M0 9.25h24M0 17.25h24"
+              />
+            </svg>
+            <svg
+              class="main-header__close"
+              width="25"
+              height="25"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <polygon
+                fill="var(--ci-primary-color, currentColor)"
+                points="427.314 107.313 404.686 84.687 256 233.373 107.314 84.687 84.686 107.313 233.373 256 84.686 404.687 107.314 427.313 256 278.627 404.686 427.313 427.314 404.687 278.627 256 427.314 107.313"
+                class="ci-primary"
+              />
+            </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>

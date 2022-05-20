@@ -32,7 +32,8 @@ export const styles = () => {
 const html= () => {
   return gulp.src('source/*.html')
   .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest('build'));
+  .pipe(gulp.dest('build'))
+  .pipe(browser.stream());
 }
 
 // Scripts
@@ -102,7 +103,10 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'build',
+      serveStaticOptions: {
+        extensions: ["html"],
+    },
     },
     cors: true,
     notify: false,
@@ -115,6 +119,7 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
+  gulp.watch('source/*.html', gulp.series(html));
   gulp.watch('source/*.html').on('change', browser.reload);
   gulp.watch('source/js/**/*.js', gulp.series(scripts));
 }

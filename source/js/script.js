@@ -1,11 +1,11 @@
-let headerMain = document.querySelector('.main-header__decoration');
-let headerToggle = document.querySelector('.main-header__toggle');
-let navMain = document.querySelector('.main-nav');
+let headerMain = document.querySelector(".main-header__wrapper");
+let headerToggle = document.querySelector(".main-header__toggle");
 
+headerMain.classList.remove("main-header__wrapper--nojs");
+headerMain.classList.remove("main-header__wrapper--opened");
+headerMain.classList.add("main-header__wrapper--closed");
 
-headerMain.classList.remove('main-header__decoration--nojs');
-
-headerToggle.addEventListener('click', function () {
-  navMain.classList.toggle('main-header__decoration--closed');
-  navMain.classList.toggle('main-header__decoration--opened');
+headerToggle.addEventListener("click", function () {
+  headerMain.classList.toggle("main-header__wrapper--closed");
+  headerMain.classList.toggle("main-header__wrapper--opened");
 });
