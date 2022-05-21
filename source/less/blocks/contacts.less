@@ -34,6 +34,10 @@
   padding: 0;
 }
 
+.contacts__title-city {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .contacts__card-address {
     width: 159px;
@@ -44,9 +48,10 @@
   }
 
   .contacts {
-    padding: 25px 70px;
+    padding: 21px 50px;
     box-sizing: border-box;
     grid-gap: 155px;
+    padding-bottom: 25px;
   }
 
   .contacts p {
@@ -59,6 +64,10 @@
     width: 314px;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .contacts__title-city {
+    display: block;
   }
 }
 
@@ -77,8 +86,10 @@
     text-align: start;
   }
 
-  .contacts p {
+  .contacts p .contacts__text {
     text-align: start;
+    margin-top: -1px;
+    margin-right: 8px;
   }
 
   .contacts__card-address {
