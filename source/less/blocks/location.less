@@ -3,17 +3,16 @@
   display: block;
 }
 
-@media (min-width: @tablet-width) {
-  .location__image {
-    width: 768px;
-    height: 400px;
-  }
+.location iframe {
+  display: block;
+  border: none;
+  width: 100vw;
+  margin-left: calc((100vw - 100%) / -2);
 }
 
-@media (min-width: @desktop-width) {
-  .location__image {
-    width: 1440px;
+
+@media (min-width: @tablet-width) {
+  .location iframe {
     height: 400px;
-    margin: 0;
   }
 }

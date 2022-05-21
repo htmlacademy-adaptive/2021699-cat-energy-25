@@ -3,8 +3,12 @@
   background-color: #ffffff;
   color: #000000;
   padding: 0 20px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #cdcdcd;
+}
+
+.form-container {
+  overflow: hidden;
 }
 
 .form__list {
@@ -30,12 +34,20 @@
   margin-bottom: 12px;
 }
 
+.form__item--weight {
+  margin-bottom: 14px;
+}
+
 .form__item--weight .form__field {
-  margin-left: 20px;
+  margin-left: 14px;
 }
 
 .form__item--age .form__field {
-  margin-left: 20px;
+  margin-left: 11px;
+}
+
+.form__item--age label {
+  width: 171px;
 }
 
 .form__wrapper {
@@ -66,6 +78,10 @@
 
 .form__field--error {
   border: 2px solid hsl(0, 100%, 75%);
+}
+
+.form__weight {
+  width: 89px;
 }
 
 @media (min-width: @tablet-width) {
@@ -99,10 +115,18 @@
     padding: 10px 20px;
     margin-left: 15px;
   }
+
+  .form__item--weight .form__field {
+    margin-left: 18px;
+  }
+
+  .form__item--age .form__field {
+    margin-left: 2px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .form__correction {
+  .form-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 78px;
@@ -111,7 +135,7 @@
     max-width: 1240px;
   }
 
-  .form__correction__wrapper {
+  .form-correction {
     padding: 0 110px;
   }
 
@@ -123,5 +147,9 @@
   .form {
     padding: 0;
     margin: 0;
+  }
+
+  .form__weight {
+    width: 91px;
   }
 }

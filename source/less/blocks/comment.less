@@ -7,7 +7,6 @@
 .comment__wrapper {
   margin: 0 auto;
   max-width: 280px;
-  margin-bottom: 22px;
 }
 
 .comment::before {
@@ -26,7 +25,6 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 39px;
   background-color: #ffffff;
   padding-right: 14px;
   padding-left: 20px;
@@ -48,6 +46,18 @@
   padding: 8px 14px;
   max-height: 169px;
   height: 150px;
+  margin-top: 37px;
+}
+
+.comment__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 24px;
+  background-color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
@@ -58,12 +68,10 @@
   .comment__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 43px 1px;
-    margin-bottom: 75px;
     width: 182px;
     padding: 0;
     padding-left: 39px;
-    padding-right: 42px;
+    padding-right: 37px;
     margin-left: -39px;
   }
 
@@ -73,15 +81,24 @@
     margin: 0 auto;
   }
 
-  .comment::before {
-    top: 20%;
-  }
-
   .comment__field {
     font-size: 20px;
     line-height: 30px;
     padding: 9px 18px;
     height: 174px;
+    margin-top: 74px;
+  }
+
+  .comment__text {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 39px;
+    padding-right: 42px;
+    margin-left: -39px;
+  }
+
+  .comment__inner {
+    margin-top: 65px;
   }
 }
 
@@ -95,11 +112,6 @@
   .comment__title {
     font-size: 36px;
     line-height: 36px;
-    margin-top: 28px;
-  }
-
-  .comment::before {
-    top: 16%;
   }
 
   .comment {
@@ -109,5 +121,9 @@
   .comment__field {
     padding: 10px 19px;
     box-sizing: border-box;
+  }
+
+  .comment__inner {
+    margin-top: 0;
   }
 }

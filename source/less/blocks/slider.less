@@ -26,16 +26,28 @@
   padding: 16px 0;
 }
 
-.slider__text span {
+.slider__text button {
+  border: 0;
   border-bottom: 1px dashed #000000;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 0;
 }
 
-.slider__text span:hover {
+
+.slider__text button:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.slider__text span:active {
-  border-bottom: none;
+.slider__text button:focus {
+  opacity: 0.3;
+}
+
+.slider__text button:active {
+  border: 0;
 }
 
 .slider__text label {
@@ -44,9 +56,10 @@
 }
 
 .slider__toggles {
-  margin: 3px 18px;
+  margin: 4px 0;
+  margin-left: 11px;
   position: relative;
-  width: 92px;
+  width: 85px;
   height: 14px;
   display: inline-block;
 }
@@ -75,6 +88,14 @@
   border: 1px solid hsl(97, 53%, 47%);
 }
 
+.slider__toggles .slider__toggle:focus {
+  opacity: 0.3;
+}
+
+.slider__range:focus {
+  box-shadow: 0 0 0 1px #000000;
+}
+
 .slider__toggles .slider__toggle::before {
   position: absolute;
   content: "";
@@ -85,6 +106,10 @@
   background-color: hsl(97, 53%, 47%);
   border-radius: 6px;
   transition: 0.3s;
+}
+
+.slider__toggles:focus .slider__toggle::before {
+  background-color: #7fff00;
 }
 
 .slider__checkbox:checked + .slider__toggle {
@@ -103,11 +128,16 @@
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 47px;
-    padding-top: 26px;
+    padding-top: 24px;
+  }
+
+  .slider__text button {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 
   .slider {
-    background-color: hsl(0, 0%, 92%);
     margin: 0 auto;
   }
 
@@ -167,6 +197,7 @@
   .slider__text {
     background-color: hsl(0, 0%, 95%);
     width: 592px;
+    margin-right: 8px;
   }
 
   .slider {
@@ -178,6 +209,6 @@
   }
 
   .slider__list {
-    margin-left: 21px;
+    margin-left: 46px;
   }
 }

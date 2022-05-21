@@ -1,14 +1,11 @@
-let headerMain = document.querySelector('.main-header__decoration');
-let headerToggle = document.querySelector('.main-header__toggle');
+let headerMain = document.querySelector(".main-header__wrapper");
+let headerToggle = document.querySelector(".main-header__toggle");
 
-headerMain.classList.remove('main-header__decoration--nojs');
+headerMain.classList.remove("main-header__wrapper--nojs");
+headerMain.classList.remove("main-header__wrapper--opened");
+headerMain.classList.add("main-header__wrapper--closed");
 
-headerToggle.addEventListener('click', function () {
-  if (headerMain.classList.contains('main-header__decoration--closed')) {
-    headerMain.classList.remove('main-header__decoration--closed');
-    headerMain.classList.add('main-header__decoration--opened');
-  } else {
-    headerMain.classList.add('main-header__decoration--closed');
-    headerMain.classList.remove('main-header__decoration--opened');
-  }
+headerToggle.addEventListener("click", function () {
+  headerMain.classList.toggle("main-header__wrapper--closed");
+  headerMain.classList.toggle("main-header__wrapper--opened");
 });

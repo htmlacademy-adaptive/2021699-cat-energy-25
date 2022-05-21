@@ -2,63 +2,86 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="./favicons/32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
+    <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <div
-          class="main-header__decoration main-header__decoration--opened main-header__decoration--nojs"
-        >
+      <div
+        class="main-header__wrapper main-header__wrapper--opened main-header__wrapper--nojs"
+      >
+        <div class="main-header__decoration">
           <div class="main-header__logo">
-            <a class="main-header__logo-image">
-              <picture>
-                <source
+            <a class="main-header__logo-image" href="index.html"
+              ><picture
+                ><source
                   media="(min-width: 1440px)"
-                  srcset="./img/logo/logo-desktop.svg"
-                />
+                  srcset="./img/logo/logo-desktop.svg" />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./img/logo/logo-tablet.svg"
-                />
+                  srcset="./img/logo/logo-tablet.svg" />
                 <img
                   src="./img/logo/logo-mobile.svg"
                   width="33"
                   height="38"
-                  alt="Магазин «Энергия кота»"
-                />
-              </picture>
-            </a>
-            <a class="main-header__logo-cat-energy">
-              <img
+                  alt="Магазин «Энергия кота»" /></picture></a
+            ><a class="main-header__logo-cat-energy" href="index.html"
+              ><img
                 src="./img/logo/logo-mobile_energy.svg"
                 width="101"
                 height="18"
                 alt="«Энергия кота»"
-              />
-            </a>
+            /></a>
           </div>
           <button class="main-header__toggle" type="button">
+            <svg
+              class="main-header__show"
+              width="24"
+              height="18"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke="#000"
+                stroke-width="1.5"
+                d="M0 1.25h24M0 9.25h24M0 17.25h24"
+              />
+            </svg>
+            <svg
+              class="main-header__close"
+              width="25"
+              height="25"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <polygon
+                fill="var(--ci-primary-color, currentColor)"
+                points="427.314 107.313 404.686 84.687 256 233.373 107.314 84.687 84.686 107.313 233.373 256 84.686 404.687 107.314 427.313 256 278.627 404.686 427.313 427.314 404.687 278.627 256 427.314 107.313"
+                class="ci-primary"
+              />
+            </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html"> Главная </a>
-              </li>
+              <li class="site-list__item"><a href="index.html">Главная</a></li>
               <li class="site-list__item site-list__item-catalog">
-                <a href="catalog.html"> Каталог продукции </a>
+                <a href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item site-list__item--active">
-                <a> Подбор программы </a>
+                <a>Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -77,15 +100,15 @@
         </div>
       </section>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form__correction__wrapper">
-          <div class="form__correction">
+        <div class="form-correction">
+          <div class="form-info">
             <section class="form">
               <div class="form__wrapper">
                 <div class="form__list">
                   <div class="form__item">
                     <label class="form__name" for="name">Имя:*</label>
                     <input
-                      class="form__field form__field--error"
+                      class="form__field"
                       type="text"
                       name="user"
                       id="name"
@@ -95,7 +118,7 @@
                     />
                   </div>
                   <div class="form__item form__item--weight">
-                    <label class="form__weight" for="weight">Вес(кг):*</label>
+                    <label class="form__weight" for="weight">Вес (кг):*</label>
                     <input
                       class="form__field"
                       type="text"
@@ -106,7 +129,7 @@
                     />
                   </div>
                   <div class="form__item form__item--age">
-                    <label class="form__age" for="age">Возраст(лет):</label>
+                    <label class="form__age" for="age">Возраст (лет):</label>
                     <input
                       class="form__field"
                       type="text"
@@ -126,35 +149,35 @@
                     <input
                       class="visually-hidden correction__input"
                       type="radio"
-                      name="weight-loss"
+                      name="correction"
                       id="loss"
-                      checked
+                      checked="checked"
                     />
-                    <label class="correction__label" for="loss">
-                      похудение
-                    </label>
+                    <label class="correction__label" for="loss"
+                      >похудение</label
+                    >
                   </div>
                   <div class="correction__item">
                     <input
                       class="visually-hidden correction__input"
                       type="radio"
-                      name="weight-gain"
+                      name="correction"
                       id="gain"
                     />
-                    <label class="correction__label" for="gain">
-                      Набор массы
-                    </label>
+                    <label class="correction__label" for="gain"
+                      >Набор массы</label
+                    >
                   </div>
                   <div class="correction__item">
                     <input
                       class="visually-hidden correction__input"
                       type="radio"
-                      name="weight-unknown"
+                      name="correction"
                       id="unknown"
                     />
-                    <label class="correction__label" for="unknown">
-                      Не знаю (Нужен ваш совет)
-                    </label>
+                    <label class="correction__label" for="unknown"
+                      >Не знаю (Нужен ваш совет)</label
+                    >
                   </div>
                 </div>
               </div>
@@ -167,9 +190,7 @@
               Контактные данные (владельца кота)
             </h2>
             <div class="сontact-owner__information">
-              <div
-                class="сontact-owner__item сontact-owner__item__email сontact-owner__item--error"
-              >
+              <div class="сontact-owner__item сontact-owner__item__email">
                 <label class="сontact-owner__email" for="сontact-owner__email"
                   >E-mail:*</label
                 >
@@ -183,7 +204,7 @@
                   required
                 />
                 <svg
-                  class="сontact-owner__field--email"
+                  class="сontact-owner__field__email"
                   width="19"
                   height="14"
                   viewBox="0 0 19 14"
@@ -227,7 +248,7 @@
                   required
                 />
                 <svg
-                  class="сontact-owner__field--phone"
+                  class="сontact-owner__field__phone"
                   width="20"
                   height="21"
                   viewBox="0 0 20 21"
@@ -258,14 +279,13 @@
           </div>
         </section>
       </form>
-
       <section class="comment">
         <div class="comment__wrapper">
           <div class="comment__owner">
-            <h2 class="comment__title">Комментарий</h2>
-
             <div class="comment__inner">
-              <label class="comment__text" for="comment-field"></label>
+              <label class="comment__title" for="comment-field"
+                >Комментарий</label
+              >
               <textarea
                 class="comment__field"
                 name="comment"
@@ -289,11 +309,11 @@
                   type="checkbox"
                   name="sweetener"
                   id="control__label"
-                  checked
+                  checked="checked"
                 />
-                <label class="control__label" for="control__label">
-                  Сахарозаменитель
-                </label>
+                <label class="control__label" for="control__label"
+                  >Сахарозаменитель</label
+                >
               </li>
               <li class="additionally-filter__item control">
                 <input
@@ -302,9 +322,9 @@
                   name="sweetener"
                   id="control__water"
                 />
-                <label class="control__label" for="control__water">
-                  Питьевая вода
-                </label>
+                <label class="control__label" for="control__water"
+                  >Питьевая вода</label
+                >
               </li>
               <li class="additionally-filter-item control">
                 <input
@@ -313,9 +333,7 @@
                   name="sweetener"
                   id="control__milk"
                 />
-                <label class="control__label" for="control__milk">
-                  Молоко
-                </label>
+                <label class="control__label" for="control__milk">Молоко</label>
               </li>
               <li class="additionally__filter__item control">
                 <input
@@ -324,9 +342,9 @@
                   name="sweetener"
                   id="control__vitamins"
                 />
-                <label class="control__label" for="control__vitamins">
-                  Витамины
-                </label>
+                <label class="control__label" for="control__vitamins"
+                  >Витамины</label
+                >
               </li>
             </ul>
           </div>
@@ -338,7 +356,7 @@
               отправить заявку
             </button>
             <p class="additionally__field additionally__field--top">
-              <small> * — Обязательные поля </small>
+              <small>* — Обязательные поля</small>
             </p>
           </div>
         </div>
@@ -346,9 +364,9 @@
       <section class="cooperation-contacts">
         <div class="cooperation-contacts__wrapper">
           <div class="cooperation-contacts__invitation contacts">
-            <b class="contacts__title">
-              Приглашаем<br />к сотрудничеству<br />дилеров!
-            </b>
+            <b class="contacts__title"
+              >Приглашаем<br />к сотрудничеству<br />дилеров!</b
+            >
             <p class="contacts__text">
               ул. Большая<br />Конюшенная, д. 19/8<br /><br
                 class="contacts__title-city"
@@ -356,30 +374,14 @@
             </p>
           </div>
           <div class="cooperation-contacts__location location">
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="
-                  ./img/location/map_desktop.png,
-                  ./img/location/map_desktop@2x.png
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./img/location/map_tablet.png,
-                  ./img/location/map_tablet@2x.png
-                "
-              />
-              <img
-                class="location__image"
-                src="./img/location/map_mobile.png"
-                srcset="./img/location/map_mobile@2x.png"
-                alt="Локация магазина функционального питания для кошек"
-                width="320"
-                height="362"
-              />
-            </picture>
+            <h2 class="visually-hidden">Адрес магазина на карте</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+              width="320"
+              height="362"
+              allowfullscreen
+              title="Офис компании по адресу улица Большая конюшенная дом 19/8, Санкт-Петербург"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -387,13 +389,15 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <img
-            class="logo-image"
-            src="./img/logo/logo-mobile_energy.svg"
-            alt="Логотип: «Энергия кота»"
-            width="128"
-            height="24"
-          />
+          <a class="main-footer__logo-img" href="index.html">
+            <img
+              class="logo-image"
+              src="./img/logo/logo-mobile_energy.svg"
+              alt="Логотип: «Энергия кота»"
+              width="128"
+              height="24"
+            />
+          </a>
         </div>
         <div class="main-footer__social social">
           <h2 class="visually-hidden">Давайте дружить!</h2>
@@ -402,6 +406,7 @@
               <a
                 class="social__link social__link--vkontakte"
                 href="https://vk.com/htmlacademy"
+                title="Ссылка на нас Вконтакте"
                 ><svg
                   aria-hidden="true"
                   focusable="false"
@@ -423,6 +428,7 @@
               <a
                 class="social__link social__link--youtube"
                 href="https://www.youtube.com/user/htmlacademyru"
+                title="Ссылка на наш youtube"
                 ><svg
                   aria-hidden="true"
                   focusable="false"
@@ -460,8 +466,8 @@
                     fill="#666"
                   />
                 </svg>
-                <span class="visually-hidden">Мы в Телеграме</span>
-              </a>
+                <span class="visually-hidden">Мы в Телеграме</span></a
+              >
             </li>
           </ul>
         </div>
@@ -469,17 +475,17 @@
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <img
+            aria-label="Логотип HTML Academy"
+            ><img
               class="copyright__logo"
               src="./img/htmlacademy.svg"
-              alt="Логотип HTML Academy"
-          /></a>
-          <a
+              alt="Логотип HTML Academy" /></a
+          ><a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <svg
+            title="Ссылка на сайт htmlacademy"
+            aria-label="Ссылка на сайт htmlacademy"
+            ><svg
               class="copyright__logo-icon"
               width="27"
               height="34"
@@ -494,5 +500,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

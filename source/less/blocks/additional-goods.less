@@ -1,4 +1,4 @@
-.additional-goods {
+.additional-goods__present {
   background-color: #ffffff;
   color: #000000;
   margin: 0 20px;
@@ -9,15 +9,17 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+  border-top: 1px solid #cdcdcd;
 }
 
 @media (min-width: @tablet-width) {
   .additional-goods__wrapper {
     width: 100%;
     max-width: 768px;
+    border-top: 0;
   }
 
-  .additional-goods {
+  .additional-goods__present {
     margin-top: 43px;
     margin-bottom: 66px;
   }
@@ -31,7 +33,7 @@
     max-width: 1220px;
   }
 
-  .additional-goods__present {
+  .additional-goods {
     display: flex;
     justify-content: space-between;
     padding: 0 110px;
@@ -39,7 +41,7 @@
     margin: 0 auto;
   }
 
-  .additional-goods {
+  .additional-goods__present {
     margin: 0;
   }
 }

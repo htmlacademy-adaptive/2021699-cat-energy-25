@@ -1,7 +1,7 @@
 .сontact-owner {
   margin: 0;
   color: #444444;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   padding: 0 20px;
   position: relative;
 }
@@ -14,7 +14,7 @@
 .сontact-owner::before {
   content: "";
   position: absolute;
-  top: 26%;
+  top: 19%;
   height: 2px;
   width: 100%;
   background-color: #68b738;
@@ -81,58 +81,46 @@
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid hsl(0, 0%, 91%);
+  position: relative;
 }
 
-.сontact-owner__field--email {
+.сontact-owner__field__email {
   position: absolute;
   content: "";
-  top: 15px;
-  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
   stroke: #222222;
 }
 
-.сontact-owner__field--phone {
+.сontact-owner__field__phone {
   position: absolute;
   content: "";
-  top: 13px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 14px;
   fill: #000000;
 }
 
-.сontact-owner__field--email:focus {
+.сontact-owner__field__email:focus {
   stroke: #68b738;
 }
 
-.сontact-owner__field--phone:focus {
+.сontact-owner__field__phone:focus {
   fill: #68b738;
 }
 
 .сontact-owner__field:hover {
-  border: 1px solid hsl(0, 0%, 80%);
+  outline: 1px solid hsl(0, 0%, 80%);
 }
 
 .сontact-owner__item__email input:focus {
-  border: 2px solid #444444;
-  // background-image: url("../img/catalog_food/email-focus.svg");
+  outline: 2px solid #444444;
 }
-
-// .сontact-owner__item__email input {
-//   background-image: url("../img/catalog_food/email.svg");
-//   background-repeat: no-repeat;
-//   background-position: 95% 50%;
-// }
-
-// .сontact-owner__item__tel input {
-//   background-image: url("../img/catalog_food/phone.svg");
-//   background-repeat: no-repeat;
-//   background-position: 95% 50%;
-// }
 
 @media (min-width: @tablet-width) {
   .сontact-owner {
     padding: 0;
-    // padding-right: 63px;
-    // padding-left: 61px;
   }
 
   .сontact-owner__wrapper {
@@ -160,6 +148,7 @@
   .сontact-owner__item {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 16px;
   }
 
   .сontact-owner__item__email input {
@@ -197,6 +186,7 @@
 
   .сontact-owner {
     padding: 0;
+    margin-bottom: 51px;
   }
 
   .сontact-owner__information {

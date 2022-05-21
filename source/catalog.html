@@ -2,65 +2,88 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="./favicons/32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" />
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" />
+    <link rel="preload" href="./fonts/oswaldmedium.woff" as="font" />
+    <link rel="manifest" href="./manifest.webmanifest" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <div
-          class="main-header__decoration main-header__decoration--opened main-header__decoration--nojs"
-        >
+      <div
+        class="main-header__wrapper main-header__wrapper--opened main-header__wrapper--nojs"
+      >
+        <div class="main-header__decoration">
           <div class="main-header__logo">
-            <a class="main-header__logo-image">
-              <picture>
-                <source
+            <a class="main-header__logo-image" href="index.html"
+              ><picture
+                ><source
                   media="(min-width: 1440px)"
-                  srcset="./img/logo/logo-desktop.svg"
-                />
+                  srcset="./img/logo/logo-desktop.svg" />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./img/logo/logo-tablet.svg"
-                />
+                  srcset="./img/logo/logo-tablet.svg" />
                 <img
                   src="./img/logo/logo-mobile.svg"
                   width="33"
                   height="38"
-                  alt="Магазин «Энергия кота»"
-                />
-              </picture>
-            </a>
-            <a class="main-header__logo-cat-energy">
-              <img
+                  alt="Магазин «Энергия кота»" /></picture></a
+            ><a class="main-header__logo-cat-energy" href="index.html"
+              ><img
                 src="./img/logo/logo-mobile_energy.svg"
                 width="101"
                 height="18"
                 alt="«Энергия кота»"
-              />
-            </a>
+            /></a>
           </div>
           <button class="main-header__toggle" type="button">
+            <svg
+              class="main-header__show"
+              width="24"
+              height="18"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke="#000"
+                stroke-width="1.5"
+                d="M0 1.25h24M0 9.25h24M0 17.25h24"
+              />
+            </svg>
+            <svg
+              class="main-header__close"
+              width="25"
+              height="25"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <polygon
+                fill="var(--ci-primary-color, currentColor)"
+                points="427.314 107.313 404.686 84.687 256 233.373 107.314 84.687 84.686 107.313 233.373 256 84.686 404.687 107.314 427.313 256 278.627 404.686 427.313 427.314 404.687 278.627 256 427.314 107.313"
+                class="ci-primary"
+              />
+            </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
         <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="index.html"> Главная </a>
-              </li>
+              <li class="site-list__item"><a href="index.html">Главная</a></li>
               <li
                 class="site-list__item site-list__item-catalog site-list__item--active"
               >
-                <a> Каталог продукции </a>
+                <a>Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html"> Подбор программы </a>
+                <a href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -78,44 +101,59 @@
       <section class="catalog-food">
         <div class="catalog-food__wrapper">
           <ul class="food-list">
-            <li class="food-list__item food-item food-item__chicken">
+            <li class="food-list__item food-item food-item--chicken">
               <div class="food-item__image-card">
-                <a class="food-item__image" href="#">
-                  <picture>
-                    <source
+                <a class="food-item__image" href="#"
+                  ><picture
+                    ><source
                       media="(min-width: 1440px)"
                       srcset="
-                        ./img/catalog_food/chicken/chicken-desktop.png,
-                        ./img/catalog_food/chicken/chicken-desktop@2x.png
-                      "
-                    />
+                        ./img/catalog_food/chicken/chicken-desktop.webp    1x,
+                        ./img/catalog_food/chicken/chicken-desktop@2x.webp 2x
+                      " />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/catalog_food/chicken/chicken-tablet.png,
-                        ./img/catalog_food/chicken/chicken-tablet@2x.png
-                      "
-                    />
+                        ./img/catalog_food/chicken/chicken-tablet.webp    1x,
+                        ./img/catalog_food/chicken/chicken-tablet@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ./img/catalog_food/chicken/chicken-mobile.webp    1x,
+                        ./img/catalog_food/chicken/chicken-mobile@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/chicken/chicken-desktop.png    1x,
+                        ./img/catalog_food/chicken/chicken-desktop@2x.png 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/chicken/chicken-tablet.png    1x,
+                        ./img/catalog_food/chicken/chicken-tablet@2x.png 2x
+                      " />
                     <img
                       class="food-item__image-chicken food-item__image-chicken--average"
                       src="./img/catalog_food/chicken/chicken-mobile.png"
                       srcset="./img/catalog_food/chicken/chicken-mobile@2x.png"
-                      width="68" height="86"
-                      alt="Корм со вкусом курицы,объем-средний"
-                    />
-                  </picture>
-                </a>
+                      width="68"
+                      height="86"
+                      alt="Корм со вкусом курицы,объем-средний" /></picture
+                ></a>
               </div>
               <div class="food-item__card">
-                <a class="food-item__name" href="#">
-                  <h2 class="food-item__title">
-                    Cat Energy <br class="food-item__br" />PRO 500 г
-                  </h2>
-                </a>
+                <a class="food-item__name" href="#"
+                  ><h2 class="food-item__title">
+                    Cat Energy&nbsp;<br class="food-item__br" />PRO 500 г
+                  </h2></a
+                >
                 <ul class="food-item__list">
                   <li class="food-item__item">
                     <span class="food-item__characteristic">Масса</span>
-                    <span class="food-item__description">500 г </span>
+                    <span class="food-item__description">500 г</span>
                   </li>
                   <li class="food-item__item">
                     <span class="food-item__characteristic">Вкус</span>
@@ -131,42 +169,57 @@
                 >заказать</a
               >
             </li>
-            <li class="food-list__item food-item food-item__chicken-big">
+            <li class="food-list__item food-item food-item--chicken-big">
               <div class="food-item__image-card">
-                <a class="food-item__image food-item__image-big" href="#">
-                  <picture>
-                    <source
+                <a class="food-item__image food-item__image-big" href="#"
+                  ><picture
+                    ><source
                       media="(min-width: 1440px)"
                       srcset="
-                        ./img/catalog_food/chicken-big/chicken-big-desktop.png,
-                        ./img/catalog_food/chicken-big/chicken-big-desktop@2x.png
-                      "
-                    />
+                        ./img/catalog_food/chicken-big/chicken-big-desktop.webp    1x,
+                        ./img/catalog_food/chicken-big/chicken-big-desktop@2x.webp 2x
+                      " />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/catalog_food/chicken-big/chicken-big-tablet.png,
-                        ./img/catalog_food/chicken-big/chicken-big-tablet@2x.png
-                      "
-                    />
+                        ./img/catalog_food/chicken-big/chicken-big-tablet.webp    1x,
+                        ./img/catalog_food/chicken-big/chicken-big-tablet@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ./img/catalog_food/chicken-big/chicken-big-mobile.webp    1x,
+                        ./img/catalog_food/chicken-big/chicken-big-mobile@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/chicken-big/chicken-big-desktop.png    1x,
+                        ./img/catalog_food/chicken-big/chicken-big-desktop@2x.png 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/chicken-big/chicken-big-tablet.png    1x,
+                        ./img/catalog_food/chicken-big/chicken-big-tablet@2x.png 2x
+                      " />
                     <img
                       class="food-item__image-chicken food-item__image-chicken--big"
-                      src=" ./img/catalog_food/chicken-big/chicken-big-mobile.png"
+                      src="./img/catalog_food/chicken-big/chicken-big-mobile.png"
                       srcset="
                         ./img/catalog_food/chicken-big/chicken-big-mobile@2x.png
                       "
-                      width="84" height="100"
-                      alt="Корм со вкусом курицы,объем-большой"
-                    />
-                  </picture>
-                </a>
+                      width="84"
+                      height="100"
+                      alt="Корм со вкусом курицы,объем-большой" /></picture
+                ></a>
               </div>
               <div class="food-item__card">
-                <a class="food-item__name" href="">
-                  <h2 class="food-item__title">
-                    Cat Energy <br class="food-item__br" />PRO 1000 г
-                  </h2>
-                </a>
+                <a class="food-item__name" href=""
+                  ><h2 class="food-item__title">
+                    Cat Energy&nbsp;<br class="food-item__br" />PRO 1000 г
+                  </h2></a
+                >
                 <ul class="food-item__list">
                   <li class="food-item__item">
                     <span class="food-item__characteristic">Масса</span>
@@ -182,46 +235,59 @@
                   </li>
                 </ul>
               </div>
-              <a class="food-item__order food-item__button-color" href="">
-                заказать
-              </a>
+              <a class="food-item__order food-item__button-color" href=""
+                >заказать</a
+              >
             </li>
-
-            <li class="food-list__item food-item food-item__fish">
+            <li class="food-list__item food-item food-item--fish">
               <div class="food-item__image-card">
-                <a class="food-item__image" href="#">
-                  <picture>
-                    <source
+                <a class="food-item__image" href="#"
+                  ><picture
+                    ><source
                       media="(min-width: 1440px)"
                       srcset="
-                        ./img/catalog_food/fish/fish-desktop.png,
-                        ./img/catalog_food/fish/fish-desktop@2x.png
-                      "
-                    />
+                        ./img/catalog_food/fish/fish-desktop.webp    1x,
+                        ./img/catalog_food/fish/fish-desktop@2x.webp 2x
+                      " />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/catalog_food/fish/fish-tablet.png,
-                        ./img/catalog_food/fish/fish-tablet@2x.png
-                      "
-                    />
+                        ./img/catalog_food/fish/fish-tablet.webp    1x,
+                        ./img/catalog_food/fish/fish-tablet@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ./img/catalog_food/fish/fish-mobile.webp    1x,
+                        ./img/catalog_food/fish/fish-mobile@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/fish/fish-desktop.png    1x,
+                        ./img/catalog_food/fish/fish-desktop@2x.png 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/fish/fish-tablet.png    1x,
+                        ./img/catalog_food/fish/fish-tablet@2x.png 2x
+                      " />
                     <img
                       class="food-item__image-fish food-item__image-fish--average"
                       src="./img/catalog_food/fish/fish-mobile.png"
                       srcset="./img/catalog_food/fish/fish-mobile@2x.png"
                       width="68"
                       height="78"
-                      alt="Корм со вкусом рыбы,объем-средний"
-                    />
-                  </picture>
-                </a>
+                      alt="Корм со вкусом рыбы,объем-средний" /></picture
+                ></a>
               </div>
               <div class="food-item__card">
-                <a class="food-item__name" href="#">
-                  <h2 class="food-item__title">
-                    Cat Energy <br class="food-item__br" />PRO 500 г
-                  </h2>
-                </a>
+                <a class="food-item__name" href="#"
+                  ><h2 class="food-item__title">
+                    Cat Energy&nbsp;<br class="food-item__br" />PRO 500 г
+                  </h2></a
+                >
                 <ul class="food-item__list">
                   <li class="food-item__item">
                     <span class="food-item__characteristic">Масса</span>
@@ -237,29 +303,44 @@
                   </li>
                 </ul>
               </div>
-              <a class="food-item__order food-item__button-color" href="">
-                заказать
-              </a>
+              <a class="food-item__order food-item__button-color" href=""
+                >заказать</a
+              >
             </li>
-
-            <li class="food-list__item food-item food-item__fish-big">
+            <li class="food-list__item food-item food-item--fish-big">
               <div class="food-item__image-card">
-                <a class="food-item__image food-item__image-big" href="#">
-                  <picture>
-                    <source
+                <a class="food-item__image food-item__image-big" href="#"
+                  ><picture
+                    ><source
                       media="(min-width: 1440px)"
                       srcset="
-                        ./img/catalog_food/fish-big/fish-big-desktop.png,
-                        ./img/catalog_food/fish-big/fish-big-desktop@2x.png
-                      "
-                    />
+                        ./img/catalog_food/fish-big/fish-big-desktop.webp    1x,
+                        ./img/catalog_food/fish-big/fish-big-desktop@2x.webp 2x
+                      " />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/catalog_food/fish-big/fish-big-tablet.png,
-                        ./img/catalog_food/fish-big/fish-big-tablet@2x.png
-                      "
-                    />
+                        ./img/catalog_food/fish-big/fish-big-tablet.webp    1x,
+                        ./img/catalog_food/fish-big/fish-big-tablet@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ./img/catalog_food/fish-big/fish-big-mobile.webp    1x,
+                        ./img/catalog_food/fish-big/fish-big-mobile@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/fish-big/fish-big-desktop.png    1x,
+                        ./img/catalog_food/fish-big/fish-big-desktop@2x.png 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/fish-big/fish-big-tablet.png    1x,
+                        ./img/catalog_food/fish-big/fish-big-tablet@2x.png 2x
+                      " />
                     <img
                       class="food-item__image-fish food-item__image-fish--big"
                       src="./img/catalog_food/fish-big/fish-big-mobile.png"
@@ -268,17 +349,15 @@
                       "
                       width="84"
                       height="100"
-                      alt="Корм со вкусом рыбы,объем-большой"
-                    />
-                  </picture>
-                </a>
+                      alt="Корм со вкусом рыбы,объем-большой" /></picture
+                ></a>
               </div>
               <div class="food-item__card">
-                <a class="food-item__name food-item__image-big" href="#">
-                  <h2 class="food-item__title">
-                    Cat Energy <br class="food-item__br" />PRO 1000 г
-                  </h2>
-                </a>
+                <a class="food-item__name food-item__image-big" href="#"
+                  ><h2 class="food-item__title">
+                    Cat Energy&nbsp;<br class="food-item__br" />PRO 1000 г
+                  </h2></a
+                >
                 <ul class="food-item__list">
                   <li class="food-item__item">
                     <span class="food-item__characteristic">Масса</span>
@@ -294,47 +373,61 @@
                   </li>
                 </ul>
               </div>
-              <a class="food-item__order food-item__button-color" href="">
-                заказать
-              </a>
+              <a class="food-item__order food-item__button-color" href=""
+                >заказать</a
+              >
             </li>
-
-            <li class="food-list__item food-item food-item__buckwheat">
+            <li class="food-list__item food-item food-item--buckwheat">
               <div class="food-item__image-card">
-                <a class="food-item__image" href="#">
-                  <picture>
-                    <source
+                <a class="food-item__image" href="#"
+                  ><picture
+                    ><source
                       media="(min-width: 1440px)"
                       srcset="
-                        ./img/catalog_food/buckwheat/buckwheat-desktop.png,
-                        ./img/catalog_food/buckwheat/buckwheat-desktop@2x.png
-                      "
-                    />
+                        ./img/catalog_food/buckwheat/buckwheat-desktop.webp    1x,
+                        ./img/catalog_food/buckwheat/buckwheat-desktop@2x.webp 2x
+                      " />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/catalog_food/buckwheat/buckwheat-tablet.png,
-                        ./img/catalog_food/buckwheat/buckwheat-tablet@2x.png
-                      "
-                    />
+                        ./img/catalog_food/buckwheat/buckwheat-tablet.webp    1x,
+                        ./img/catalog_food/buckwheat/buckwheat-tablet@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat/buckwheat-mobile.webp    1x,
+                        ./img/catalog_food/buckwheat/buckwheat-mobile@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat/buckwheat-desktop.png    1x,
+                        ./img/catalog_food/buckwheat/buckwheat-desktop@2x.png 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat/buckwheat-tablet.png    1x,
+                        ./img/catalog_food/buckwheat/buckwheat-tablet@2x.png 2x
+                      " />
                     <img
                       class="food-item__image-buckwheat food-item__image-buckwheat--average"
                       src="./img/catalog_food/buckwheat/buckwheat-mobile.png"
                       srcset="
                         ./img/catalog_food/buckwheat/buckwheat-mobile@2x.png
-                      " width="68"
+                      "
+                      width="68"
                       height="78"
-                      alt="Корм со вкусом гречки,объем-средний"
-                    />
-                  </picture>
-                </a>
+                      alt="Корм со вкусом гречки,объем-средний" /></picture
+                ></a>
               </div>
               <div class="food-item__card">
-                <a class="food-item__name" href="#">
-                  <h2 class="food-item__title">
-                    Cat Energy <br class="food-item__br" />slim 500 г
-                  </h2>
-                </a>
+                <a class="food-item__name" href="#"
+                  ><h2 class="food-item__title">
+                    Cat Energy&nbsp;<br class="food-item__br" />slim 500 г
+                  </h2></a
+                >
                 <ul class="food-item__list">
                   <li class="food-item__item">
                     <span class="food-item__characteristic">Масса</span>
@@ -350,44 +443,61 @@
                   </li>
                 </ul>
               </div>
-              <a class="food-item__order food-item__button-color" href="">
-                заказать
-              </a>
+              <a class="food-item__order food-item__button-color" href=""
+                >заказать</a
+              >
             </li>
-
-            <li class="food-list__item food-item food-item__buckwheat-big">
+            <li class="food-list__item food-item food-item--buckwheat-big">
               <div class="food-item__image-card">
-                <a class="food-item__image food-item__image-big" href="#">
-                  <picture>
+                <a class="food-item__image food-item__image-big" href="#"
+                  ><picture>
                     <source
                       media="(min-width: 1440px)"
                       srcset="
-                        ./img/catalog_food/buckwheat-big/buckwheat-big-desktop.png,
-                        ./img/catalog_food/buckwheat-big/buckwheat-big-desktop@2x.png
-                      "
-                    />
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-desktop.webp    1x,
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-desktop@2x.webp 2x
+                      " />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/catalog_food/buckwheat-big/buckwheat-big-tablet.png,
-                        ./img/catalog_food/buckwheat-big/buckwheat-big-tablet@2x.png
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-tablet.webp    1x,
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-tablet@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-mobile.webp    1x,
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-mobile@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-desktop.png    1x,
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-desktop@2x.png 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-tablet.png    1x,
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-tablet@2x.png 2x
+                      " />
+                    <img
+                      class="food-item__image-buckwheat food-item__image-buckwheat-big"
+                      src="./img/catalog_food/buckwheat-big/buckwheat-big-mobile.png"
+                      srcset="
+                        ./img/catalog_food/buckwheat-big/buckwheat-big-mobile.png
                       "
-                    />
-                  <img
-                    class="food-item__image-buckwheat food-item__image-buckwheat--big"
-                    src="./img/catalog_food/buckwheat-big/buckwheat-big-mobile.png"
-                    srcset="./img/catalog_food/buckwheat-big/buckwheat-big-mobile.png"
-                    width="84" height="100"
-                    alt="Корм со вкусом гречки,объем-большой"
-                  />
-                </a>
+                      width="84"
+                      height="100"
+                      alt="Корм со вкусом гречки,объем-большой" /></picture
+                ></a>
               </div>
               <div class="food-item__card">
-                <a class="food-item__name" href="#">
-                  <h2 class="food-item__title">
-                    Cat Energy <br class="food-item__br" />slim 1000 г
-                  </h2>
-                </a>
+                <a class="food-item__name" href="#"
+                  ><h2 class="food-item__title">
+                    Cat Energy&nbsp;<br class="food-item__br" />slim 1000 г
+                  </h2></a
+                >
                 <ul class="food-item__list">
                   <li class="food-item__item">
                     <span class="food-item__characteristic">Масса</span>
@@ -403,81 +513,93 @@
                   </li>
                 </ul>
               </div>
-              <a class="food-item__order food-item__button-color" href="">
-                заказать
-              </a>
+              <a class="food-item__order food-item__button-color" href=""
+                >заказать</a
+              >
             </li>
-
-            <li class="food-list__item food-item food-item__rice">
+            <li class="food-list__item food-item food-item--rice">
               <div class="food-item__image-card">
-                <a class="food-item__image" href="#">
-                  <picture>
-                    <source
+                <a class="food-item__image" href="#"
+                  ><picture
+                    ><source
                       media="(min-width: 1440px)"
                       srcset="
-                        ./img/catalog_food/rice/rice-desktop.png,
-                        ./img/catalog_food/rice/rice-desktop@2x.png
-                      "
-                    />
+                        ./img/catalog_food/rice/rice-desktop.webp    1x,
+                        ./img/catalog_food/rice/rice-desktop@2x.webp 2x
+                      " />
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./img/catalog_food/rice/rice-tablet.png,
-                        ./img/catalog_food/rice/rice-tablet@2x.png
-                      "
-                    />
-                  <img
-                    class="food-item__image-rice food-item__image-rice--average"
-                    src="./img/catalog_food/rice/rice-mobile.png"
-                    srcset="./img/catalog_food/rice/rice-mobile@2x.png"
-                    width="72"
-                    height="84"
-                    alt="Корм со вкусом риса,объем-средний"
-                  />
-                  </picture>
-                </a>
+                        ./img/catalog_food/rice/rice-tablet.webp    1x,
+                        ./img/catalog_food/rice/rice-tablet@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 0px)"
+                      srcset="
+                        ./img/catalog_food/rice/rice-mobile.webp    1x,
+                        ./img/catalog_food/rice/rice-mobile@2x.webp 2x
+                      " />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./img/catalog_food/rice/rice-desktop.png    1x,
+                        ./img/catalog_food/rice/rice-desktop@2x.png 2x
+                      " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/catalog_food/rice/rice-tablet.png    1x,
+                        ./img/catalog_food/rice/rice-tablet@2x.png 2x
+                      " />
+                    <img
+                      class="food-item__image-rice food-item__image-rice--average"
+                      src="./img/catalog_food/rice/rice-mobile.png"
+                      srcset="./img/catalog_food/rice/rice-mobile@2x.png"
+                      width="72"
+                      height="84"
+                      alt="Корм со вкусом риса,объем-средний" /></picture
+                ></a>
               </div>
               <div class="food-item__card">
-                <a class="food-item__name" href="#">
-                  <h2 class="food-item__title">
-                    Cat Energy <br class="food-item__br" />slim 500 г
-                  </h2>
-                </a>
-                <ul class="food-item__list">
+                <a class="food-item__name" href="#"
+                  ><h2 class="food-item__title">
+                    Cat Energy&nbsp;<br class="food-item__br" />slim 500 г
+                  </h2></a
+                >
+                <ul class="food-item__list food-item__list--rice">
                   <li class="food-item__item">
                     <span class="food-item__characteristic">Масса</span>
                     <span class="food-item__description">500 г</span>
                   </li>
-                  <li class="food-item__item">
+                  <li class="food-item__item food-item__item--rice">
                     <span class="food-item__characteristic">Вкус</span>
                     <span class="food-item__description">Рис</span>
                   </li>
-                  <li class="food-item__item">
+                  <li class="food-item__item food-item__item--rice">
                     <span class="food-item__characteristic">Цена</span>
                     <span class="food-item__description">500 Р.</span>
                   </li>
                 </ul>
               </div>
-              <a class="food-item__order food-item__button-color" href="">
-                заказать
-              </a>
+              <a class="food-item__order food-item__button-color" href=""
+                >заказать</a
+              >
             </li>
             <li class="food-list__item add-card">
               <div class="add-card__item">
-                <a class="add-card__add add-card__add--current" href="">
-                  <img
+                <a class="add-card__add add-card__add--current" href=""
+                  ><img
                     class="add-card__plus"
                     src="./img/catalog_food/plus.png"
                     alt="Показать остальные товары"
-                  />
-                </a>
+                /></a>
                 <div class="add-card__title__link">
                   <h2 class="add-card__title">Показать еще 100500 товаров</h2>
                   <p class="add-card__slogan">
                     На самом деле вкусов гораздо больше!
                   </p>
                 </div>
-                <a class="add-card__more more" href="#"> показать все </a>
+                <a class="add-card__more more" href="#">показать все</a>
               </div>
             </li>
           </ul>
@@ -488,25 +610,25 @@
           <h2 class="catalog__title">Дополнительные товары</h2>
         </div>
       </section>
-      <div class="additional-goods__present">
-        <section class="additional-goods">
+      <div class="additional-goods">
+        <section class="additional-goods__present">
           <div class="additional-goods__wrapper">
             <div class="card-product">
               <div class="card-product__item product">
                 <h3 class="product__title">Сахарозаменитель</h3>
                 <div class="product__list">
                   <span class="product__description">1 упаковка (100 г)</span>
-                  <span class="product__price">200 Р. </span>
+                  <span class="product__price">200 Р.</span>
                 </div>
                 <a class="product__order product__button-color" href=""
                   >заказать</a
                 >
               </div>
-              <div class="card-product__item product product__water">
+              <div class="card-product__item product product--water">
                 <h3 class="product__title">Питьевая вода</h3>
                 <div class="product__list">
                   <span class="product__description">5 литров</span>
-                  <span class="product__price">50 Р. </span>
+                  <span class="product__price">50 Р.</span>
                 </div>
                 <a class="product__order product__button-color" href=""
                   >заказать</a
@@ -516,21 +638,21 @@
                 <h3 class="product__title">Молоко</h3>
                 <div class="product__list">
                   <span class="product__description">1 литр</span>
-                  <span class="product__price">100 Р. </span>
+                  <span class="product__price">100 Р.</span>
                 </div>
-                <a class="product__order product__button-color" href="">
-                  заказать
-                </a>
+                <a class="product__order product__button-color" href=""
+                  >заказать</a
+                >
               </div>
-              <div class="card-product__item product">
+              <div class="card-product__item product product--vitamins">
                 <h3 class="product__title">Витамины</h3>
                 <div class="product__list">
                   <span class="product__description">1 упаковка (30 г)</span>
                   <span class="product__price">200 Р.</span>
                 </div>
-                <a class="product__order product__button-color" href="">
-                  заказать
-                </a>
+                <a class="product__order product__button-color" href=""
+                  >заказать</a
+                >
               </div>
             </div>
           </div>
@@ -553,9 +675,9 @@
       <section class="cooperation-contacts">
         <div class="cooperation-contacts__wrapper">
           <div class="cooperation-contacts__invitation contacts">
-            <b class="contacts__title">
-              Приглашаем<br />к сотрудничеству<br />дилеров!
-            </b>
+            <b class="contacts__title"
+              >Приглашаем<br />к сотрудничеству<br />дилеров!</b
+            >
             <p class="contacts__text">
               ул. Большая<br />Конюшенная, д. 19/8<br /><br
                 class="contacts__title-city"
@@ -563,28 +685,14 @@
             </p>
           </div>
           <div class="cooperation-contacts__location location">
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="
-                  ./img/location/map_desktop.png,
-                  ./img/location/map_desktop@2x.png
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./img/location/map_tablet.png,
-                  ./img/location/map_tablet@2x.png
-                "
-              />
-              <img
-                class="location__image"
-                src="./img/location/map_mobile.png"
-                srcset="./img/location/map_mobile@2x.png"
-                alt="Локация магазина функционального питания для кошек"
-              />
-            </picture>
+            <h2 class="visually-hidden">Адрес магазина на карте</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+              width="320"
+              height="362"
+              allowfullscreen
+              title="Офис компании по адресу улица Большая конюшенная дом 19/8, Санкт-Петербург"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -592,13 +700,15 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <img
-            class="logo-image"
-            src="./img/logo/logo-mobile_energy.svg"
-            alt="Логотип: «Энергия кота»"
-            width="128"
-            height="24"
-          />
+          <a class="main-footer__logo-img" href="index.html">
+            <img
+              class="logo-image"
+              src="./img/logo/logo-mobile_energy.svg"
+              alt="Логотип: «Энергия кота»"
+              width="128"
+              height="24"
+            />
+          </a>
         </div>
         <div class="main-footer__social social">
           <h2 class="visually-hidden">Давайте дружить!</h2>
@@ -607,6 +717,8 @@
               <a
                 class="social__link social__link--vkontakte"
                 href="https://vk.com/htmlacademy"
+                title="Ссылка на нас Вконтакте"
+                aria-label="Ссылка на нас Вконтакте"
                 ><svg
                   aria-hidden="true"
                   focusable="false"
@@ -628,6 +740,8 @@
               <a
                 class="social__link social__link--youtube"
                 href="https://www.youtube.com/user/htmlacademyru"
+                title="Ссылка на наш youtube"
+                aria-label="Ссылка на наш youtube"
                 ><svg
                   aria-hidden="true"
                   focusable="false"
@@ -649,6 +763,7 @@
               <a
                 class="social__link social__link--telegram"
                 href="https://t.me/htmlacademy"
+                aria-label="Ссылка на наш telegram"
                 ><svg
                   aria-hidden="true"
                   focusable="false"
@@ -665,8 +780,8 @@
                     fill="#666"
                   />
                 </svg>
-                <span class="visually-hidden">Мы в Телеграме</span>
-              </a>
+                <span class="visually-hidden">Мы в Телеграме</span></a
+              >
             </li>
           </ul>
         </div>
@@ -674,29 +789,31 @@
           <a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-          >
-            <img
+            aria-label="Логотип HTML Academy"
+            ><img
               class="copyright__logo"
               src="./img/htmlacademy.svg"
-              alt="Логотип HTML Academy"
-          /></a>
-          <a
+              alt="Логотип HTML Academy" /></a
+          ><a
             class="copyright__link"
             href="https://htmlacademy.ru/intensive/adaptive"
-          >
-          <svg
-          class="copyright__logo-icon"
-          width="27"
-          height="34"
-          viewBox="0 0 27 34"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0Zm11.6 25-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25Zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9Zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2Z"
-          />
-        </svg></a>
+            title="Ссылка на сайт htmlacademy"
+            aria-label="Ссылка на сайт htmlacademy"
+            ><svg
+              class="copyright__logo-icon"
+              width="27"
+              height="34"
+              viewBox="0 0 27 34"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0Zm11.6 25-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25Zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9Zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2Z"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
