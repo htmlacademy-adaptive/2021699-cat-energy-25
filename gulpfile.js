@@ -130,6 +130,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
+  copyImages,
   optimizeImages,
   gulp.parallel(
     styles,
@@ -138,10 +139,8 @@ export const build = gulp.series(
     svg,
     sprite,
     createWebp
-  ),
-  gulp.series(
-    watcher
-));
+  )
+ );
 
 //Default
 
