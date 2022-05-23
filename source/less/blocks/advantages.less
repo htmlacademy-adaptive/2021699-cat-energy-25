@@ -20,33 +20,6 @@
   margin: 0 auto;
 }
 
-.advantages-card {
-  margin: 0;
-  padding: 0;
-}
-
-.advantages-card__item {
-  display: flex;
-  background-color: #ffffff;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-}
-
-.advantages-card__item p {
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-  margin: 0;
-}
-
-.advantages-card__item__image {
-  margin: 0 20px 17px 0;
-}
-
 @media (min-width: @tablet-width) {
   .advantages {
     padding: 0;
@@ -67,66 +40,11 @@
     line-height: 60px;
     margin-bottom: 34px;
   }
-
-  .advantages-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 38px 59px;
-    counter-reset: card;
-  }
-
-  .advantages-card__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 230px;
-    padding-top: 39px;
-    padding-bottom: 57px;
-    counter-increment: card;
-  }
-
-  .advantages-card__item::after {
-    content: counter(card);
-    font-family: "Oswald", "Arial", sans-serif;
-    width: 120px;
-    position: absolute;
-    font-size: 280px;
-    color: #f2f2f2;
-    z-index: -1;
-    top: 130px;
-    right: -6px;
-  }
-
-  .advantages-card__item__image {
-    margin: 0;
-  }
-
-  .advantages-card__item__image img {
-    width: 80px;
-    height: 80px;
-    margin: 0;
-    margin-bottom: 29px;
-  }
-
-  .advantages-card__item p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .advantages-card__description-result {
-    width: 245px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
     padding-bottom: 136px;
-  }
-
-  .advantages-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px 100px;
   }
 
   .advantages__wrapper {
@@ -135,17 +53,6 @@
     margin: 0 auto;
     padding: 70px;
     padding-top: 62px;
-  }
-
-  .advantages-card__item {
-    width: 100%;
-    padding-top: 28px;
-  }
-
-  .advantages-card__item::after {
-    top: 130px;
-    right: 0;
-    left: 113px;
   }
 
   .advantages__title {
