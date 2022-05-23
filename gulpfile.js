@@ -105,7 +105,7 @@ const server = (done) => {
     server: {
       baseDir: 'build',
       serveStaticOptions: {
-        extensions: ["html"],
+        extensions: ['html'],
     },
     },
     cors: true,
