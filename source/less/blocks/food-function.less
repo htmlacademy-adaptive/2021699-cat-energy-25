@@ -140,6 +140,8 @@
     position: relative;
     margin-top: 105px;
     margin-left: 105px;
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 
   .food-function__image {
@@ -180,15 +182,25 @@
 
   .food-function__header {
     background-image: none;
-    display: flex;
-    width: 1440px;
+    display: grid;
+    grid-template-columns: 280px 330px 1fr;
+    grid-template-rows: min-content min-content min-content;
+    align-items: start;
     margin-bottom: 103px;
+    width: 1440px;
+  }
+
+  .food-function__picture {
+    grid-column: 2/4;
+    grid-row: 1/4;
   }
 
   .food-function__form {
     width: 244px;
-    position: absolute;
+    position: static;
+    grid-column: 1/3;
+    grid-row: 2/3;
     left: 85px;
-    margin-top: 42px;
+    margin: 31px 0 0 190px;
   }
 }
